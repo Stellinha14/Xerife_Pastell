@@ -1,0 +1,332 @@
+.navbar{
+    background-color: #814d3b;
+}
+.carrosel{
+    height: 380px;
+    object-fit: cover; 
+}
+.carousel{
+    border: 3px solid #340f02;  /* cor e espessura */
+    border-radius: 5px;
+    overflow: hidden;  
+}
+.bg{
+    background-image: url("../../img/fundo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+.bg2{
+    background-image: url("../../img/fundo2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+.bg3{
+    background-color: #e8ddaf;
+}
+.fundotxt{
+    background-color: #491a0a;
+    color:#e4bc81;
+    border-radius: 5px;
+}
+.xerifinho{
+    height: 290px;
+}
+.cardtit{
+    color:#e4bc81;
+    font-size: 32px;
+}
+.cardser{
+    background-color: #491a0a;
+    height: 22vw;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cardser:hover {
+    transform: scale(1.09); 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* sombra opcional */
+}
+.card-img{
+    border-radius: 23px ;
+}
+.icone{
+    width: 40px !important;
+    margin-right: 2vw;
+}
+.centro-cartas {
+    display: flex; /*diz como os filhos vão se organizar*/
+    flex-direction: column; /* agora os filhos ficam em coluna*/
+    align-items: center;    /* centraliza horizontalmente cada carta */
+    justify-content: center;
+}
+.carta {
+    display: flex;
+    flex-direction: row; /*Deixa lado a lado os filhos*/
+    margin-top: 27px;
+    align-items: center; /*alinhar verticalmente*/
+    gap: 20px;
+}
+.input-customer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.input-group{
+    height: 20px;
+} 
+.btn-lim{
+    background-color:#814d3b;
+    border:none;
+    border-radius: 5px;
+    padding: 8px;
+    color:black;
+}
+.btn-en{
+    background-color: #ac7c42;
+    border:none;
+    border-radius: 5px;
+    padding: 8px;
+    color:black;
+}
+.outer{
+    background-color:#ac7c42;
+    display: flex;
+    align-items: center !important;
+    justify-content:center !important;
+    height: 100vh; /* altura igual a 100% da tela */
+    width: 100vh;
+    border-radius: 50%;
+    position: relative; /*Referencia para o filho - .Resul*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease;;
+}
+.outer:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);;
+}
+.resul{
+    background-color: #491a0a;
+    display: flex;
+    text-align: center;
+    flex-direction:column;
+    align-items: center !important;
+    justify-content:center !important;
+    position: absolute; /* fica preso ao .outer */
+    height: 90vh; /* altura igual a 100% da tela */
+    width: 90vh;
+    border-radius: 50%;
+}
+.persona{
+    height: 40vw;
+}
+.alerta{
+    display: none;
+    background-color: #e8ddaf;
+    color: #491a0a;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px;
+    border:2px #8a3316 solid;
+}
+.pasteis{
+    height: 38vw;
+}
+.cont-imagem {
+    display: flex; /*diz como os filhos vão se organizar*/
+    flex-direction: column; /* agora os filhos ficam em coluna*/
+    align-items: center;    /* centraliza horizontalmente cada carta */
+    justify-content: center;
+}
+.imagem {
+    display: flex;
+    flex-direction: column; /*Deixa um em baixo do outro os filhos*/
+    margin-top: 27px;
+    align-items: center; /*alinhar verticalmente*/
+    gap: 20px;
+    margin-bottom: 3vw;
+}
+.in{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+.imad{
+    height: 31vw;
+}
+.persona2{
+    height: 33vw;
+}
+.fundo{
+    background-color:#ac7c42;
+    height: 100vh; /* altura igual a 100% da tela */
+    width: 100vh;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.fundo:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bolinha{
+    display:none;
+}
+.cont_pergunta{
+    border-radius: 2vw;
+    background-color:  rgb(129, 77, 59, 0.6);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    height: 19vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quiz_options{
+    display: flex;
+    max-width: fit-content; /* só ocupa o espaço dos filhos */
+    gap:15px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* has: seleciona o pai se tiver um filho marcado */
+.op:has(input[type="radio"]:checked) { 
+    background-color: #814d3b; /* muda a cor só dentro deste container */
+    color: #e8ddaf;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.op{
+    background-color: #e4bc81;
+    width: 20vw;
+    border-radius: 3vw;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.op:hover{
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+.txt_pergunta{
+    color: #e8ddaf;
+}
+.col_2{
+    flex: 0 0 auto; /* não cresce, não encolhe, só o tamanho do conteúdo */
+}
+.col_3{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    flex:1;
+}
+.bg_quiz{
+    width: 80%;
+    background-color: #e4bc81;
+    border-radius: 17px;
+    border:3px #814d3b solid;
+    padding: 20px;
+}
+.txt_resul{
+    font-size: 23px;
+}
+.piri{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img_car{
+    width: 100%;
+}
+.car{
+    position: relative;
+    width: 53vw;
+}
+/* before cria uma camada antes do elemento */
+.carousel-item::before{
+    content: "";
+    position: absolute; 
+    background-color:rgba(100, 71, 47, 0.3);
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+.carousel-caption{
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+.container_car{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+.lista_bg{
+    display: flex;
+    flex:1;
+    justify-content: center;
+    font-family: "tit" !important;
+    font-size: 17px;
+}
+.opc_lista{
+    border-radius: 2vw;
+    background-color:  rgb(129, 77, 59, 0.5);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    border: 2px #491a0a solid;
+    /* color:#e8ddaf; */
+    padding: 18px;
+}
+.cont_listas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.famoso_input{
+    width: 15vw;
+    border: 2px solid #814d3b;  
+    border-radius: 5px;         
+    outline: none;   /* remove o contorno azul padrão ao focar */
+    padding: 6px 10px; 
+}
+.cont_famoso{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center ;
+}
+.famoso{
+    width: 45vw;
+    border-radius: 5px;
+    border: 3px #340f02 solid;
+}
+.sub{
+    font-size: 45px;
+}
+.fama_persona{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}

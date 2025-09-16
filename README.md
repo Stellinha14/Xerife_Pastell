@@ -1,2 +1,3 @@
-# Xerife_Pastell
+# Xerife Pastell
+
 Site com jogos baseados na pastelaria fictícia "Xerife Pastell"

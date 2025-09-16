@@ -18,7 +18,7 @@ include HEADER_TEMPLATE;
     </div>
 </div>
 <div class="container text-center tit mt-5">
-    <h4 class="font1">Você escolheu: <span class="font2"><?php echo $nome; ?></span> E sua celebridade é: <span class="font2"><?php echo $famoso; ?>!</span></h4>
+    <h4 class="font1">Você escolheu: <span class="font2"><?php echo $nome; ?>.</span> E sua celebridade é: <span class="font2"><?php echo $famoso; ?>!</span></h4>
 </div>
 <div class="d-flex justify-content-center mb-4 mt-4 gap-3">
     <a href="<?php echo BASEURL; ?>views/famosos.php" class="btn-en tit">Jogar Novamente</a>

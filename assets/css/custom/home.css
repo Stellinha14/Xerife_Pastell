@@ -27,6 +27,9 @@
 .bg3{
     background-color: #e8ddaf;
 }
+.ler-mais{
+    display: none;
+}
 .fundotxt{
     background-color: #491a0a;
     color:#e4bc81;

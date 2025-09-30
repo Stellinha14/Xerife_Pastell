@@ -78,11 +78,12 @@
         Trabalhamos somente com as melhores marcas e os nossos recheios são feitos 
         diariamente. “Estamos sempre inventando pastéis. Porém, o nosso verdadeiro 
         segredo é o amor e o carinho pelo o que fazemos! A crocância e o clima descontraído 
-        para degustar essas paixões gastronômicas. Procure a loja mais próxima de você.
+        para degustar essas paixões gastronômicas... <span id="span" class="ler-mais">Procure a loja mais próxima de você.</span>
       </p>
+      <button type="button" id="btn" class="btn-en tit">Ler mais</button>
     </div>
     <div class="col-6">    
-      <img src="<?php echo BASEURL; ?>assets/img/banner.png">
+      <img src="<?php echo BASEURL; ?>assets/img/banner.png" class="img-fluid">
     </div>
   </div>
 </div>
@@ -116,4 +117,4 @@
     </div>
   </div>
 </div>
-
+<script src="<?php echo BASEURL; ?>assets/js/custom/home.js"></script>

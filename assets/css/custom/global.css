@@ -24,7 +24,7 @@
   font-family: "open";
   text-align: justify;
   color:black;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: bold;
 }
 .san{
@@ -126,4 +126,25 @@ footer{
 }
 a{
   text-decoration: none;
+}
+/* Responsividade */
+
+/* telas grandes (desktop menor) */
+@media (max-width: 1200px) {
+  
+}
+
+ /* tablets na horizontal */
+@media (max-width: 992px) {
+ 
+}
+
+ /* tablets na vertical */
+@media (max-width: 768px) {
+ 
+}
+
+ /* celulares */
+@media (max-width: 576px) {
+ 
 }

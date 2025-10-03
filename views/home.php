@@ -67,7 +67,7 @@
 <div class="container-fluid mt-5 mb-5 bg3">
   <div class="row">
     <div class="col-2 lateral"></div>
-    <div class="col-4 mt-5 text-center">     
+    <div class="col-4 mt-5 text-center teste">     
       <h1 class="san">
         <span class="font1">Que tal</span>
         <span class="font2"> um pastel?</span>
@@ -78,18 +78,19 @@
         segredo é o amor e o carinho pelo o que fazemos!<span id="pontos" class="font2">...</span><span id="span" class="ler-mais"> A crocância e o clima descontraído 
         para degustar essas paixões gastronômicas. Procure a loja mais próxima de você.</span>
       </p>
-      <button type="button" id="btn" class="btn-en tit">Ler mais</button>
+      <button type="button" id="btn" class="btn-en tit mb-4">Ler mais</button>
     </div>
-    <div class="col-6">    
-      <img src="<?php echo BASEURL; ?>assets/img/banner.png" class="img-fluid h-100">
+    <div class="col-6 banner">    
     </div>
   </div>
 </div>
-<div class="container mb-5">
-  <div class="fundotxt mt-4 p-1 borda">
-    <h1 class="tit text-center">CONTATOS</h1>
-  </div>
+<div class="container mb-5 d-flex flex-column justify-content-center align-items center">
   <div class="row">
+    <div class="col-12 fundotxt mt-4 p-1 borda">
+      <h1 class="tit text-center">CONTATOS</h1>
+    </div>
+  </div>
+  <div class="row me-2">
     <div class="col-6">
       <div class="d-flex justify-content-center align-items-center fundotxt mt-4">
         <img src="<?php echo BASEURL; ?>assets/img/telefone.png" class="icone">
@@ -108,9 +109,9 @@
         <h1 class="tit me-5">Xerife Pastell</h1>
       </div>
     </div>
-    <div class="col-6 fundotxt mt-4">
+    <div class="col-6 fundotxt mt-4 d-flex flex-column justify-content-center align-items-center p-2">
       <h1 class="tit text-center">Localização</h1>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2855.009974729335!2d-46.8068621!3d-23.4419306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefd6cc0d83ccf%3A0xe8c2c9d1b8163226!2sR.%20das%20Fl%C3%B4res%2C%20123%20-%20Vila%20dos%20Palmares%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2012345-678!5e1!3m2!1spt-BR!2sbr!4v1756008340330!5m2!1spt-BR!2sbr" width="550" height="235" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2855.009974729335!2d-46.8068621!3d-23.4419306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefd6cc0d83ccf%3A0xe8c2c9d1b8163226!2sR.%20das%20Fl%C3%B4res%2C%20123%20-%20Vila%20dos%20Palmares%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2012345-678!5e1!3m2!1spt-BR!2sbr!4v1756008340330!5m2!1spt-BR!2sbr" width="540" height="220" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </div>
   </div>

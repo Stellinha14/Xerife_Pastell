@@ -30,6 +30,18 @@
 .ler-mais{
     display: none;
 }
+.menos{
+    display: none;
+}
+.lateral{
+    background-image:url("../../img/lateral.png");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+/* .banner{
+    background-image: url("../../img/banner.png");
+    background-size: cover;
+} */
 .fundotxt{
     background-color: #491a0a;
     color:#e4bc81;

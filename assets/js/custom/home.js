@@ -1,18 +1,24 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-    let bnt = document.getElementById("btn");
+    let btn = document.getElementById("btn");
     let span = document.getElementById("span")
-   
-    bnt.addEventListener("click", function(event){
+    let pontos = document.getElementById("pontos")
+
+    btn.addEventListener("click", function(event){
         event.preventDefault();
-        console.log(span.style.display);
-        if (span.style.display === "none"){
-            span.style.display === "inline"
+        
+        if (span.classList.contains("ler-mais")){
+            span.classList.remove("ler-mais");
+            pontos.classList.add("menos")
             btn.innerHTML = "Ler menos"
+
         }else{
-            span.style.display === "none"
-            btn.innerHTML="Ler mais"
+            span.classList.add("ler-mais");
+            btn.innerHTML= "Ler mais"
+            pontos.classList.remove("menos")
         }
+        
     });
+    
     
 });

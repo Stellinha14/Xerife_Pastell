@@ -64,11 +64,9 @@
     </div>
   </div>
 </div>
-<div class="container-fluid ps-0 mt-5 mb-5">
-  <div class="row bg3">
-    <div class="col-2">     
-      <img src="<?php echo BASEURL; ?>assets/img/lateral.png">
-    </div>
+<div class="container-fluid mt-5 mb-5 bg3">
+  <div class="row">
+    <div class="col-2 lateral"></div>
     <div class="col-4 mt-5 text-center">     
       <h1 class="san">
         <span class="font1">Que tal</span>
@@ -77,13 +75,13 @@
       <p class="open">
         Trabalhamos somente com as melhores marcas e os nossos recheios são feitos 
         diariamente. “Estamos sempre inventando pastéis. Porém, o nosso verdadeiro 
-        segredo é o amor e o carinho pelo o que fazemos! A crocância e o clima descontraído 
-        para degustar essas paixões gastronômicas... <span id="span" class="ler-mais">Procure a loja mais próxima de você.</span>
+        segredo é o amor e o carinho pelo o que fazemos!<span id="pontos" class="font2">...</span><span id="span" class="ler-mais"> A crocância e o clima descontraído 
+        para degustar essas paixões gastronômicas. Procure a loja mais próxima de você.</span>
       </p>
       <button type="button" id="btn" class="btn-en tit">Ler mais</button>
     </div>
     <div class="col-6">    
-      <img src="<?php echo BASEURL; ?>assets/img/banner.png" class="img-fluid">
+      <img src="<?php echo BASEURL; ?>assets/img/banner.png" class="img-fluid h-100">
     </div>
   </div>
 </div>

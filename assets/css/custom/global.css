@@ -80,6 +80,14 @@ body{
 footer{
   background-color: #491a0a;
 }
+.bg-footer{
+  background-image: url("../../img/footer.png");
+  background-size: cover;
+}
+.bg-footer2{
+  background-image: url("../../img/footer2.png");
+  background-size: cover;
+}
 .txtfooter{
   color: #e8ddaf;
   font-size: 50px;
@@ -127,24 +135,31 @@ footer{
 a{
   text-decoration: none;
 }
+.local{
+    width: 530px;
+    height: 210px;
+}
 /* Responsividade */
 
-/* telas grandes (desktop menor) */
-@media (max-width: 1200px) {
+/* telas entre 992px e 1200px */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .local {
+    width: 450px; 
+  }
+}
+
+/* tablets na horizontal */
+@media (min-width: 769px) and (max-width: 992px) {
   
 }
 
- /* tablets na horizontal */
-@media (max-width: 992px) {
- 
+/* tablets na vertical */
+@media (min-width: 577px) and (max-width: 768px) {
+  
 }
 
- /* tablets na vertical */
-@media (max-width: 768px) {
- 
-}
-
- /* celulares */
+/* celulares */
 @media (max-width: 576px) {
- 
+  
 }
+

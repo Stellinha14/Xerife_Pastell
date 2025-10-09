@@ -111,7 +111,7 @@
     </div>
     <div class="col-6 fundotxt mt-4 d-flex flex-column justify-content-center align-items-center p-2">
       <h1 class="tit text-center">Localização</h1>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2855.009974729335!2d-46.8068621!3d-23.4419306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefd6cc0d83ccf%3A0xe8c2c9d1b8163226!2sR.%20das%20Fl%C3%B4res%2C%20123%20-%20Vila%20dos%20Palmares%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2012345-678!5e1!3m2!1spt-BR!2sbr!4v1756008340330!5m2!1spt-BR!2sbr" width="540" height="220" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2855.009974729335!2d-46.8068621!3d-23.4419306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefd6cc0d83ccf%3A0xe8c2c9d1b8163226!2sR.%20das%20Fl%C3%B4res%2C%20123%20-%20Vila%20dos%20Palmares%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2012345-678!5e1!3m2!1spt-BR!2sbr!4v1756008340330!5m2!1spt-BR!2sbr" class="local" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </div>
   </div>

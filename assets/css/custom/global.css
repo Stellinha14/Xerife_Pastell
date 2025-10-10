@@ -84,10 +84,10 @@ footer{
   background-image: url("../../img/footer.png");
   background-size: cover;
 }
-.bg-footer2{
+/* .bg-footer2{
   background-image: url("../../img/footer2.png");
   background-size: cover;
-}
+} */
 .txtfooter{
   color: #e8ddaf;
   font-size: 50px;
@@ -166,6 +166,10 @@ a{
   .txtfooter{
     font-size: 45px;
   }
+  .bg-footer {
+    background-size: contain; 
+    background-position: center top;
+  } 
 }
 
 /* tablets na vertical */

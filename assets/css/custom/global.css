@@ -146,6 +146,9 @@ a{
   .local {
     width: 450px; 
   }
+  .card-body{
+    margin-top: -2vw !important;
+  }
 }
 
 /* tablets na horizontal */

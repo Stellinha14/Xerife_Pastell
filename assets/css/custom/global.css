@@ -73,6 +73,11 @@ body{
 .navbar-brand.titulo:hover {
   color: #e8ddaf;
 }
+.navbar-brand.titulo-lateral{
+  font-family: "san";
+  color: #e8ddaf;
+  font-size: 25px;
+}
 .navbar-links{
   display: flex;
   justify-content: center;
@@ -86,6 +91,9 @@ body{
 }
 .menu-img-logo{
   height: 50px;
+}
+.menu-img-logo-mobile{
+  height: 38px;
 }
 .navbar-links .nav-link {
   position: relative;  
@@ -106,12 +114,21 @@ body{
 }
 .menu{
   display: none;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 }
 #sidebar hr{
   display: none;
   margin: 0;
+  left: -300px;
+}
+.menu-mobile-top{
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+.icon-home{
+  display: none;
 }
 footer{
   background-color: #491a0a;
@@ -263,11 +280,15 @@ a{
   .menu{
     display: block;
   }
+  .menu-img-logo{
+    height: 40px;
+  }
   .nav-link::after{
     display: none;
     content:none;
   }
   #sidebar {
+    display: flex;
     position:fixed;
     top:0;
     left: -300px;  
@@ -276,19 +297,31 @@ a{
     background-color:#814D3B;
     flex-direction: column;
     border: 3px solid #491a0a;
+
     z-index: 1000;
   }
   #sidebar hr{
     display: block;
     border: none;
-    border-top: 2px solid #491a0a;
-    margin: 10px 0;
+    border-top: 1px solid #ded9d7;
+    left:0;
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
   }
   .navbar-links{
-    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .nav-item{
-    margin-left: 20px;
+    display: flex;
+    margin-left: 0 auto;
+    padding: 8px;
+  }
+  .nav-item:hover{
+    background-color: #ac7c42;
+    border-radius: 5px;
   }
   #overlay{
     position: fixed;
@@ -298,6 +331,28 @@ a{
     background-color: rgba(0,0,0,0.5);
     z-index: 900;
     display: none;
+  }
+  .menu-mobile-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .menu-mobile-top p{
+    margin: 0;
+  }
+  .icon-home{
+    display: block;
+    height: 18px;
+    margin-right: 5px;
+  }
+  .brand-container{
+    gap:5px;
+  }
+  .brand-container a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
   }
 }
 

@@ -20,26 +20,38 @@
       </div>
       <a class="navbar-brand titulo" href="<?php echo BASEURL; ?>index.php">
         Xerife Pastell
-        <img src="<?php echo BASEURL; ?>assets/img/icon.png" alt="Logo" class="menu-img-logo mb-2">
+        <img src="<?php echo BASEURL; ?>assets/img/icon.png" alt="Logo" id="img-menu" class="menu-img-logo mb-2">
       </a>
     </div>
-    <ul id="sidebar" class="navbar-links">
-      <li class="nav-item me-3">
-        <a class="nav-link active" aria-current="page" href="<?php echo BASEURL; ?>index.php">Home</a>
-      </li>
-      <li class="nav-item me-3">
-        <a class="nav-link" href="<?php echo BASEURL; ?>views/adivinha.php">Números</a>
-      </li>
-      <li class="nav-item me-3">
-        <a class="nav-link" href="<?php echo BASEURL; ?>views/imagens.php">Imagens</a>
-      </li>
-      <li class="nav-item me-3">
-        <a class="nav-link" href="<?php echo BASEURL; ?>views/quiz.php">Quiz</a>
-      </li>
-      <li class="nav-item me-3">
-        <a class="nav-link" href="<?php echo BASEURL; ?>views/famosos.php">Famosos</a>
-      </li>
-    </ul>
+    <div id="sidebar">
+      <div class="menu-mobile-top" type="button">
+        <img src="<?php echo BASEURL; ?>assets/img/barra-de-menu.png" alt="logo" class="menu">
+        <p class="navbar-brand titulo-lateral">Xerife Pastell</p>
+        <img src="<?php echo BASEURL; ?>assets/img/icon.png" alt="Logo" class="menu-img-logo-mobile">
+      </div>
+      <ul class="navbar-links">
+        <li class="nav-item me-3">
+          <img src="<?php echo BASEURL; ?>assets/img/home.png" alt="logo" class="icon-home">
+          <a class="nav-link active" aria-current="page" href="<?php echo BASEURL; ?>index.php">Home</a>  
+        </li>
+        <hr>
+        <li class="nav-item me-3">
+          <a class="nav-link" href="<?php echo BASEURL; ?>views/adivinha.php">Números</a>
+        </li>
+        
+        <li class="nav-item me-3">
+          <a class="nav-link" href="<?php echo BASEURL; ?>views/imagens.php">Imagens</a>
+        </li>
+        
+        <li class="nav-item me-3">
+          <a class="nav-link" href="<?php echo BASEURL; ?>views/quiz.php">Quiz</a>
+        </li>
+        
+        <li class="nav-item me-3">
+          <a class="nav-link" href="<?php echo BASEURL; ?>views/famosos.php">Famosos</a>
+        </li>
+      </ul>
+    </div>
   </nav>
   <div id="overlay"></div>
   <script src="<?php echo BASEURL; ?>assets/js/bootstrap/bootstrap.bundle.min.js"></script>

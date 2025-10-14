@@ -16,7 +16,7 @@
   <nav class="navbar">
     <div class="brand-container">
       <div id="abrir-menu" type="button">
-        <img src="<?php echo BASEURL; ?>assets/img/barra-de-menu.png" alt="menu" class="menu">
+        <img src="<?php echo BASEURL; ?>assets/img/barra-de-menu.png" alt="menu" class="menu me-2">
       </div>
       <a class="navbar-brand titulo" href="<?php echo BASEURL; ?>index.php">
         Xerife Pastell
@@ -24,12 +24,13 @@
       </a>
     </div>
     <div id="sidebar">
+      <img id="cancelar" src="<?php echo BASEURL; ?>assets/img/cancelar.png" alt="logo" class="cancelar">
       <div class="menu-mobile-top" type="button">
-        <img src="<?php echo BASEURL; ?>assets/img/barra-de-menu.png" alt="logo" class="menu">
         <p class="navbar-brand titulo-lateral">Xerife Pastell</p>
-        <img src="<?php echo BASEURL; ?>assets/img/icon.png" alt="Logo" class="menu-img-logo-mobile">
+        <img src="<?php echo BASEURL; ?>assets/img/icon.png" alt="Logo" class="menu-img-logo-mobile ms-2">
       </div>
       <ul class="navbar-links">
+        <hr class="hr-inicial">
         <li class="nav-item me-3">
           <img src="<?php echo BASEURL; ?>assets/img/home.png" alt="logo" class="icon-home">
           <a class="nav-link active" aria-current="page" href="<?php echo BASEURL; ?>index.php">Home</a>  

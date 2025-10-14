@@ -1,0 +1,13 @@
+{
+  "name": "xerife_pastell",
+  "version": "1.0.0",
+  "description": "**Site com jogos baseados na pastelaria fictícia \"Xerife Pastell\"**",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --proxy \"localhost/xerife_pastell\" --files \"C:/xampp/htdocs/xerife_pastell/**/*.*\" --no-cache --open"
+  },
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

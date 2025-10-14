@@ -19,12 +19,12 @@ document.addEventListener("DOMContentLoaded", function(){
         overlay.style.display = "none";
         img.style.display = "inline-block";
     });
+    //executar sempre que a janela do navegador for redmensionada 
+    window.addEventListener("resize", function(){
+        const largura = window.innerWidth;
 
-    const sidebaractive = window.getComputedStyle(sidebar).left;
-    const verificasidebar = sidebaractive === "0px";
-    
-    if(verificasidebar){
-        img.style.display = "inline-block";
-    }
-
+        if(largura >= 769){
+            img.style.display = "inline-block";
+        }
+    });
 });

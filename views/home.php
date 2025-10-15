@@ -1,10 +1,10 @@
 <div class="container-fluid bg mt-1">
   <div class="col-12 p-0"> 
     <div class="row">
-      <div class="col-4 bg2 d-flex flex-column">
+      <div class="col-xl-4 col-lg-4 col-md-4 bg2 d-flex flex-column responsive-carrosel">
         <img src="<?php echo BASEURL; ?>assets/img/persona.png" class="xerifinho mt-auto mx-auto ms-3">
       </div>
-      <div class="col-8">
+      <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
         <div class="fundotxt p-1 mt-3 mb-3">        
           <h1 class="tit text-center">O Melhor Pastel da Região</h1>
         </div>
@@ -37,8 +37,8 @@
   <div class="fundotxt mt-4 p-1 borda">
     <h1 class="tit text-center">Nossos Serviços</h1>
   </div>
-  <div class="row d-flex justify-content-center mt-4 ms-5">
-    <div class="col-3 me-5">
+  <div class="row d-flex justify-content-center mt-4 ms-5 responsive-service">
+    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 me-5 responsive-unic">
       <div class="card cardser">
         <img src="<?php echo BASEURL; ?>assets/img/card_img1.jpeg" class="card-img p-3" alt="...">
         <div class="card-body d-flex align-items-center justify-content-center">
@@ -46,7 +46,7 @@
         </div>
       </div>
     </div>
-    <div class="col-3 me-5">
+    <div class="col-xl-3 col-lg-3 me-5 responsive-unic">
       <div class="card cardser">
         <img src="<?php echo BASEURL; ?>assets/img/card_img2.jpg" class="card-img p-3" alt="...">
         <div class="card-body d-flex align-items-center justify-content-center">
@@ -54,7 +54,7 @@
         </div>
       </div>
     </div>
-    <div class="col-3 me-5">
+    <div class="col-xl-3 col-lg-3 me-5 responsive-unic">
       <div class="card cardser">
         <img src="<?php echo BASEURL; ?>assets/img/card_img3.jpg" class="card-img p-3" alt="...">
         <div class="card-body d-flex align-items-center justify-content-center">
@@ -65,9 +65,9 @@
   </div>
 </div>
 <div class="container-fluid mt-5 mb-5 bg3">
-  <div class="row">
+  <div class="row responsive-banner">
     <div class="col-xl-2 col-lg-2 col-md-2 lateral"></div>
-    <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12 mt-5 text-center teste">     
+    <div class="col-xl-4 col-lg-5 col-md-6 mt-5 col-sm-12 text-center responsive-txt">     
       <h1 class="san">
         <span class="font1">Que tal</span>
         <span class="font2"> um pastel?</span>
@@ -80,18 +80,17 @@
       </p>
       <button type="button" id="btn" class="btn-en btn-ler tit mb-4">Ler mais</button>
     </div>
-    <div class="col-xl-6 col-lg-5 col-md-6 col-sm-12 banner">    
+    <div class="col-xl-6 col-lg-5 col-md-6 col-sm-12 banner"> 
     </div>
+    <img src="<?php echo BASEURL; ?>assets/img/banner.png" class="img-banner-responsive">
   </div>
 </div>
 <div class="container mb-5 d-flex flex-column justify-content-center align-items center">
-  <div class="row">
-    <div class="col-12 fundotxt mt-4 p-1 borda">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 fundotxt mt-4 p-1 borda">
       <h1 class="tit text-center">CONTATOS</h1>
     </div>
-  </div>
-  <div class="row me-2">
-    <div class="col-6">
+  <div class="row me-2 responsive-contact">
+    <div class="col-xl-6 col-lg-6 ">
       <div class="d-flex justify-content-center align-items-center fundotxt mt-4">
         <img src="<?php echo BASEURL; ?>assets/img/telefone.png" class="icone">
         <h1 class="tit me-4">(99)2552-5678</h1>
@@ -109,8 +108,8 @@
         <h1 class="tit me-5">Xerife Pastell</h1>
       </div>
     </div>
-    <div class="col-6 fundotxt mt-4 d-flex flex-column justify-content-center align-items-center p-2">
-      <h1 class="tit text-center">Localização</h1>
+    <div class="col-xl-6 col-lg-6 fundotxt map-container mt-4 d-flex flex-column justify-content-center align-items-center p-2">
+      <h1 class="tit text-center tit-local">Localização</h1>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2855.009974729335!2d-46.8068621!3d-23.4419306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefd6cc0d83ccf%3A0xe8c2c9d1b8163226!2sR.%20das%20Fl%C3%B4res%2C%20123%20-%20Vila%20dos%20Palmares%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2012345-678!5e1!3m2!1spt-BR!2sbr!4v1756008340330!5m2!1spt-BR!2sbr" class="local" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </div>

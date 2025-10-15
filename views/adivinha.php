@@ -30,7 +30,7 @@ include HEADER_TEMPLATE;
       <div class="centro-cartas">
         <!-- carta 1 -->
         <div class="carta">
-          <img src="<?php echo BASEURL; ?>assets/img/cartao 1.png" class="img-fluid">
+          <img src="<?php echo BASEURL; ?>assets/img/cartao 1.png" class="img-fluid responsive-nr">
           <div class="input-customer">
             <div class="input-group">
               <div class="input-group-text inputind">
@@ -48,7 +48,7 @@ include HEADER_TEMPLATE;
         </div>
         <!-- carta 2 -->
         <div class="carta">
-          <img src="<?php echo BASEURL; ?>assets/img/cartao 2.png" class="img-fluid">
+          <img src="<?php echo BASEURL; ?>assets/img/cartao 2.png" class="img-fluid responsive-nr">
           <div class="input-customer">
             <div class="input-group">
               <div class="input-group-text inputind">
@@ -66,7 +66,7 @@ include HEADER_TEMPLATE;
         </div>
         <!-- carta 3 -->
         <div class="carta">
-          <img src="<?php echo BASEURL; ?>assets/img/cartao 3.png" class="img-fluid">
+          <img src="<?php echo BASEURL; ?>assets/img/cartao 3.png" class="img-fluid responsive-nr">
           <div class="input-customer">
             <div class="input-group">
               <div class="input-group-text inputind">
@@ -84,7 +84,7 @@ include HEADER_TEMPLATE;
         </div>
         <!-- carta 4 -->
         <div class="carta">
-          <img src="<?php echo BASEURL; ?>assets/img/cartao 4.png" class="img-fluid">
+          <img src="<?php echo BASEURL; ?>assets/img/cartao 4.png" class="img-fluid responsive-nr">
           <div class="input-customer">
             <div class="input-group">
               <div class="input-group-text inputind">
@@ -102,7 +102,7 @@ include HEADER_TEMPLATE;
         </div>
         <!-- carta 5 -->
         <div class="carta mb-3">
-          <img src="<?php echo BASEURL; ?>assets/img/cartao 5.png" class="img-fluid">
+          <img src="<?php echo BASEURL; ?>assets/img/cartao 5.png" class="img-fluid responsive-nr">
           <div class="input-customer">
             <div class="input-group">
               <div class="input-group-text inputind">
@@ -121,7 +121,7 @@ include HEADER_TEMPLATE;
       </div>
       <div id="alert" class="container alerta"></div>
       <!-- alerta -->
-      <div class="carta justify-content-center mb-4">
+      <div class="carta-btn d-flex justify-content-center mb-4">
 
         <!-- não é visível para o usuário, guarda um valor invisível para enviar junto com o formulário -->
         <input type="hidden" name="resultado" id="resultado-hidden"> 

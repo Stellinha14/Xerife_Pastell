@@ -7,7 +7,7 @@ include HEADER_TEMPLATE;
         <h1 class="tit text-center">Jogo da Adivinhação de Imagens</h1>
     </div>
     <div class="row">
-        <div class="col-12">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
             <p class="text-center txtadivinha tit">
                 <span class="font2">Veja a carta a seguir, memorize uma imagem </span>
                 <span class="font1">

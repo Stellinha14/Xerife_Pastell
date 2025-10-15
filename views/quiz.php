@@ -369,7 +369,7 @@
 
             <div id="alert" class="container alerta mt-4"></div>
             <!-- buttons -->
-            <div class="carta justify-content-center mb-4">
+            <div class="carta-btn justify-content-center mb-4">
                 <input type="hidden" name="acertos" id="resul_acertos">
                 <input type="hidden" name="percentual" id="resul_percentual">
                 <button type="submit" class="btn-en tit">Enviar</button>

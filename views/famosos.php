@@ -95,7 +95,7 @@ include HEADER_TEMPLATE;
         </div>
         <h5 class="tit font1"><span class="font2">E aí, xerife!</span> Preparado(a) para descobrir sua <span class="font2">versão famosa!?</span></h5>
 
-        <div class="carta justify-content-center mb-4">
+        <div class="carta-btn justify-content-center mb-4">
             <!-- não é visível para o usuário, guarda um valor invisível para enviar junto com o formulário -->
             <input type="hidden" name="img" id="img">
             <input type="hidden" name="nome" id="opc">

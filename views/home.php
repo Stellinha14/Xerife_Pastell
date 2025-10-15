@@ -66,8 +66,8 @@
 </div>
 <div class="container-fluid mt-5 mb-5 bg3">
   <div class="row">
-    <div class="col-2 lateral"></div>
-    <div class="col-4 mt-5 text-center teste">     
+    <div class="col-xl-2 col-lg-2 col-md-2 lateral"></div>
+    <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12 mt-5 text-center teste">     
       <h1 class="san">
         <span class="font1">Que tal</span>
         <span class="font2"> um pastel?</span>
@@ -75,12 +75,12 @@
       <p class="open">
         Trabalhamos somente com as melhores marcas e os nossos recheios são feitos 
         diariamente. “Estamos sempre inventando pastéis. Porém, o nosso verdadeiro 
-        segredo é o amor e o carinho pelo o que fazemos!<span id="pontos" class="font2">...</span><span id="span" class="ler-mais"> A crocância e o clima descontraído 
+        segredo é o amor e o carinho pelo o que fazemos!<span id="pontos" class="font2 md-customer">...</span><span id="span" class="ler-mais"> A crocância e o clima descontraído 
         para degustar essas paixões gastronômicas. Procure a loja mais próxima de você.</span>
       </p>
-      <button type="button" id="btn" class="btn-en tit mb-4">Ler mais</button>
+      <button type="button" id="btn" class="btn-en btn-ler tit mb-4">Ler mais</button>
     </div>
-    <div class="col-6 banner">    
+    <div class="col-xl-6 col-lg-5 col-md-6 col-sm-12 banner">    
     </div>
   </div>
 </div>

@@ -25,33 +25,35 @@
     </div>
     <div id="sidebar">
       <img id="cancelar" src="<?php echo BASEURL; ?>assets/img/cancelar.png" alt="logo" class="cancelar">
-      <div class="menu-mobile-top" type="button">
+      <header class="menu-mobile-top" type="button">
         <p class="navbar-brand titulo-lateral">Xerife Pastell</p>
         <img src="<?php echo BASEURL; ?>assets/img/icon.png" alt="Logo" class="menu-img-logo-mobile ms-2">
+      </header>
+      <div class="bottom-mobile">
+        <ul class="navbar-links">
+          <hr class="hr-inicial">
+          <li class="nav-item me-3">
+            <img src="<?php echo BASEURL; ?>assets/img/home.png" alt="logo" class="icon-home">
+            <a class="nav-link active" aria-current="page" href="<?php echo BASEURL; ?>index.php">Home</a>
+          </li>
+          <hr>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="<?php echo BASEURL; ?>views/adivinha.php">Números</a>
+          </li>
+        
+          <li class="nav-item me-3">
+            <a class="nav-link" href="<?php echo BASEURL; ?>views/imagens.php">Imagens</a>
+          </li>
+        
+          <li class="nav-item me-3">
+            <a class="nav-link" href="<?php echo BASEURL; ?>views/quiz.php">Quiz</a>
+          </li>
+        
+          <li class="nav-item me-3">
+            <a class="nav-link" href="<?php echo BASEURL; ?>views/famosos.php">Famosos</a>
+          </li>
+        </ul>
       </div>
-      <ul class="navbar-links">
-        <hr class="hr-inicial">
-        <li class="nav-item me-3">
-          <img src="<?php echo BASEURL; ?>assets/img/home.png" alt="logo" class="icon-home">
-          <a class="nav-link active" aria-current="page" href="<?php echo BASEURL; ?>index.php">Home</a>  
-        </li>
-        <hr>
-        <li class="nav-item me-3">
-          <a class="nav-link" href="<?php echo BASEURL; ?>views/adivinha.php">Números</a>
-        </li>
-        
-        <li class="nav-item me-3">
-          <a class="nav-link" href="<?php echo BASEURL; ?>views/imagens.php">Imagens</a>
-        </li>
-        
-        <li class="nav-item me-3">
-          <a class="nav-link" href="<?php echo BASEURL; ?>views/quiz.php">Quiz</a>
-        </li>
-        
-        <li class="nav-item me-3">
-          <a class="nav-link" href="<?php echo BASEURL; ?>views/famosos.php">Famosos</a>
-        </li>
-      </ul>
     </div>
   </nav>
   <div id="overlay"></div>

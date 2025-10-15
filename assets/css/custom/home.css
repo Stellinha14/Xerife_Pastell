@@ -41,6 +41,9 @@
 .banner{
     background-image: url("../../img/banner.png");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100%
 }
 .fundotxt{
     background-color: #491a0a;
@@ -351,7 +354,3 @@
     align-items: center;
     flex: 1;
 }
-
-/* .teste{
-    margin-
-} */

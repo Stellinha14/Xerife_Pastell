@@ -5,7 +5,7 @@
 <?php
     $numero = $_POST['resultado']??0;
 ?>
-<div class="container mt-4 cont">
+<div class="container mt-4 cont text-sm-center">
     <div class="san">
         <h1 class="resul_txt">A imagem escolhida foi ...</h1>
     </div>

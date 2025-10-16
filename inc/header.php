@@ -52,6 +52,9 @@
           <li class="nav-item me-3">
             <a class="nav-link" href="<?php echo BASEURL; ?>views/famosos.php">Famosos</a>
           </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="<?php echo BASEURL; ?>views/sobre.php">Sobre Nós</a>
+          </li>
         </ul>
       </div>
     </div>

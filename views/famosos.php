@@ -23,41 +23,62 @@ include HEADER_TEMPLATE;
                 <!-- imagem 1 -->
                 <div class="carousel-item active" data-bs-interval="5000">
                     <img src="<?php echo BASEURL; ?>assets/img/nba.png" class="d-block img_car" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h4 class="san font3">Pastell Jordan</h4>
                         <p class="font_op">Apaixonado por esportes, principalmente por basquete. E claro, fã da NBA!</p>
+                    </div>
+                    <div class="carousel-caption-mobile">
+                        <h4 class="san font3">Pastell Jordan</h4>
+                        <p class="font_op">Apaixonado por esportes e fã da NBA!</p>
                     </div>
                 </div>
                 <!-- imagem 2 -->
                 <div class="carousel-item" data-bs-interval="5000">
                     <img src="<?php echo BASEURL; ?>assets/img/rock.png" class="d-block img_car" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h4 class="san font3">Rock in Pastell</h4>
                         <p class="font_op">Rock é com ele mesmo! Amante da música, e de uma boa guitarra.</p>
+                    </div>
+                    <div class="carousel-caption-mobile">
+                        <h4 class="san font3">Rock in Pastell</h4>
+                        <p class="font_op">Amante da música, e da guitarra.</p>
                     </div>
                 </div>
                 <!-- imagem 3 -->
                 <div class="carousel-item" data-bs-interval="5000">
                     <img src="<?php echo BASEURL; ?>assets/img/maromba.png" class="d-block img_car" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h4 class="san font3">Muscle Pastell</h4>
                         <p class="font_op">Vive na academia! Para ele o dia sem se exercitar e fortalecer os músculos não tem graça..</p>
+                    </div>
+                    <div class="carousel-caption-mobile">
+                        <h4 class="san font3">Muscle Pastell</h4>
+                        <p class="font_op">Sem treino, o dia nem começa!</p>
                     </div>
                 </div>
                 <!-- imagem 4 -->
                 <div class="carousel-item" data-bs-interval="5000">
                     <img src="<?php echo BASEURL; ?>assets/img/sr.png" class="d-block img_car" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h4 class="san font3">Sra. Pastell</h4>
                         <p class="font_op"> Patricinha. Ama passar horas no salão, sempre sempre impecável e cheia de charme!</p>
+                    </div>
+                    <div class="carousel-caption-mobile">
+                        <h4 class="san font3">Sra. Pastell</h4>
+                        <p class="font_op"> Patricinha. Ama passar horas no salão!</p>
                     </div>
                 </div>
                 <!-- imagem 5 -->
                 <div class="carousel-item" data-bs-interval="5000">
                     <img src="<?php echo BASEURL; ?>assets/img/skate.png" class="d-block img_car" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h4 class="san font3">Pastello</h4>
                         <p class="font_op">Skatista nato, cheio de energia e sempre em busca da próxima manobra radical!!
+                        <p>
+                    </div>
+                    <div class="carousel-caption-mobile">
+                        <h4 class="san font3">Pastello</h4>
+                        <p class="font_op">Skatista nato, sempre em busca da próxima manobra!
                         <p>
                     </div>
                 </div>
@@ -89,7 +110,7 @@ include HEADER_TEMPLATE;
     </div>
     <!-- fim do carrosel e da lista de opções -->
 
-    <div class="d-flex flex-column text-center mt-4">
+    <div class="d-flex flex-column text-center mt-4 p-3">
         <div id="alert" class="container alerta">
             <!-- alerta de erro -->
         </div>

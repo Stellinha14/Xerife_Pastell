@@ -37,7 +37,7 @@ if ($percentual <= 31) {
     $xerife = 'Merece pastel grátis por um mês!';
 }
 ?>
-<div class="container d-flex mt-5 mb-5">
+<div class="container d-flex mt-5 mb-5 resul_quiz_cont">
     <div class="col_2">
         <img src="<?php echo $img; ?>" class="persona">
     </div>
@@ -52,6 +52,9 @@ if ($percentual <= 31) {
             <p class="txt_resul tit">Percentual: <span class="font2"><?php echo $percentual; ?>%</span></p>
             <p class="text-center txt_resul tit"><?php echo $xerife; ?></p>
         </div>
+    </div>
+    <div class="col_2_mobile">
+        <img src="<?php echo $img; ?>" class="persona">
     </div>
 </div>
 <div class="d-flex justify-content-center mb-4 gap-3">

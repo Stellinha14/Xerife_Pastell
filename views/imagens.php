@@ -102,9 +102,9 @@ include HEADER_TEMPLATE;
                     </div>
                 </div>
             </div>
-            <div id="alert" class="container alerta"></div>
+            <div id="alert" class="container alerta mt-4"></div>
             <!-- buttons -->
-            <div class="carta justify-content-center mb-4">
+            <div class="carta-btn justify-content-center mb-4">
                 <input type="hidden" name="resultado" id="resul_hidden">
                 <button type="submit" class="btn-en tit">Enviar</button>
                 <button type="reset" class="btn-lim tit">Limpar</button>

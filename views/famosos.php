@@ -78,7 +78,7 @@ include HEADER_TEMPLATE;
                     </div>
                     <div class="carousel-caption-mobile">
                         <h4 class="san font3">Pastello</h4>
-                        <p class="font_op">Skatista nato, sempre em busca da próxima manobra!
+                        <p class="font_op">Skatista nato, ama uma manobra!
                         <p>
                     </div>
                 </div>
@@ -104,7 +104,7 @@ include HEADER_TEMPLATE;
                         <li> Pastello</li>
                     </ol>
                 </div>
-                <input type="number" id="num" name="num" min="1" max="5" class="mt-3 text-center famoso_input" value="1">
+                <input type="number" id="num" name="num" min="1" max="5" class="mt-3 text-center famoso_input" value="1" required>
             </div>
         </div>
     </div>

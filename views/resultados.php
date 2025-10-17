@@ -21,7 +21,7 @@ include HEADER_TEMPLATE;
 </div>
 
 <div class="container d-flex flex-column justify-content-center align-items-center mt-5 mb-5 resul-mobile">
-    <div class="d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-center">
         <div class="outer">
             <div class="resul">
                 <h1 class="num san">O Número que você pensou foi ...</h1>
@@ -30,7 +30,7 @@ include HEADER_TEMPLATE;
             </div>
         </div>
     </div>
-    <div class="d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-center">
         <img src="<?php echo BASEURL;?>assets/img/persona_2.png" class="persona">
     </div>
 </div>

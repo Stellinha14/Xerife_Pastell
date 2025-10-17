@@ -280,9 +280,7 @@ a {
 .responsive-num{
   display: none !important;
 }
-.resul-mobile{
-  display: none;
-}
+
 .col_2_mobile{
   display: none;
 }
@@ -305,6 +303,9 @@ a {
   border-radius: 10px;
   width: 92%;
   margin-bottom: 4vw;
+}
+.resul-mobile{
+  display: none !important;
 }
 /* Responsividade */
 /* celulares */
@@ -692,6 +693,9 @@ a {
   .cont_famoso{
     flex-direction: column !important;
   }
+  .nos{
+    height: 73vw;
+  }
 }
 
 /* tablets na vertical */
@@ -924,11 +928,12 @@ a {
   }
 
   .pasteis {
-    height: 60vw !important;
+    height: 45vw !important;
   }
 
   .imad {
-    height: 40vw !important;
+    object-fit: cover;
+    height: 30vw !important;
   }
 
   .carta {
@@ -939,7 +944,73 @@ a {
 
   .responsive-nr {
     object-fit: cover;
-    height: 22.2vw;
+    height: 21vw;
+  }
+    .cont_pergunta {
+    height: auto !important;
+    padding: 15px !important;
+  }
+
+  .quiz_options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .op {
+    width: 45vw !important;
+  }
+  .container_car {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .car {
+    position: relative;
+    width: 95vw !important;
+    margin-bottom: 3vw;
+  }
+  .carousel-caption {
+    display: none !important;
+  }
+
+  .carousel-caption-mobile {
+    display: block !important;
+    position: absolute !important;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+    /* z-index: 1000 !important; */
+    color: #fff !important;
+  }
+    .opc_lista{
+    margin: 0 !important;
+  }
+  .nos{
+    height: 60vw;
+  }
+  .resul-desktop{
+    display: none !important;
+  }
+  .resul-mobile{
+    display: block !important;
+  }
+    .outer{
+    height: 60vh !important; /* altura igual a 100% da tela */
+    width: 60vh !important;
+  }
+
+  .resul{
+    height: 55vh !important; /* altura igual a 100% da tela */
+    width: 55vh !important;
   }
 }
 
@@ -1005,6 +1076,51 @@ a {
     flex-direction: column !important;
     margin-top: 50px !important;
   }
+  .responsive-nr{
+    object-fit: cover;
+    height: 25vw;
+  }
+    .cont_pergunta {
+    height: auto !important;
+    padding: 15px !important;
+  }
+
+  .op {
+    width: 40vw !important; 
+  }
+  .container_car {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .car {
+    position: relative;
+    width: 85vw !important;
+    margin-bottom: 3vw;
+  }
+
+    .opc_lista{
+    margin: 0 !important;
+  }
+  .nos{
+    height: 50vw;
+  }
+  .outer{
+    height: 62vh !important; /* altura igual a 100% da tela */
+    width: 62vh !important;
+  }
+
+  .resul{
+    height: 57vh !important; /* altura igual a 100% da tela */
+    width: 57vh !important;
+  }
+  .persona{
+    height: 47vw !important;
+  }
+  .pnum {
+    font-size: 70px;
+  }
+
 }
 
 @media (max-width: 838px) {
@@ -1049,9 +1165,8 @@ a {
   .txtf {
     font-size: 15px;
   }
-
   .navbar-links {
-    gap: 10px;
+    gap: 5px;
   }
 
   .lateral {
@@ -1110,6 +1225,45 @@ a {
     flex-direction: column !important;
     margin-top: 50px !important;
   }
+
+  .cont_pergunta {
+    height: auto !important;
+    padding: 15px !important;
+  }
+
+  .op {
+    width: 30vw !important; 
+  }
+    .container_car {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .car {
+    position: relative;
+    width: 80vw !important;
+    margin-bottom: 3vw;
+  }
+
+  .opc_lista{
+    margin: 0 !important;
+  }
+  .nos{
+    height: 45vw;
+  }
+
+  .outer{
+    height: 70vh !important; /* altura igual a 100% da tela */
+    width: 70vh !important;
+  }
+
+  .resul{
+    height: 65vh !important; /* altura igual a 100% da tela */
+    width: 65vh !important;
+  }
+  .persona{
+    height: 41vw !important;
+  }
 }
 
 /* telas entre 992px e 1200px */
@@ -1144,5 +1298,33 @@ a {
 
   .btn-ler {
     display: none;
+  }
+    .cont_pergunta {
+    height: auto !important;
+    padding: 15px !important;
+  }
+  .op {
+    width: 25vw !important; 
+  }
+  .car {
+    position: relative;
+  }
+  .carousel-caption {
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 5px;
+    width: 93%;
+  }
+  .outer{
+    height: 80vh !important; /* altura igual a 100% da tela */
+    width: 80vh !important;
+  }
+
+  .resul{
+      height: 70vh !important; /* altura igual a 100% da tela */
+      width: 70vh !important;
+  }
+  .persona{
+    height: 41vw !important;
   }
 }

@@ -119,7 +119,7 @@ include HEADER_TEMPLATE;
           </div>
         </div>
       </div>
-      <div id="alert" class="container alerta"></div>
+      <div id="alert" class="container alerta mt-4"></div>
       <!-- alerta -->
       <div class="carta-btn d-flex justify-content-center mb-4">
 

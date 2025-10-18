@@ -14,7 +14,7 @@ include HEADER_TEMPLATE;
 <div class="container cont_famoso mt-4">
     <img src="<?php echo BASEURL;?>assets/img/<?php echo $img; ?>.jpg" alt="famoso" class="famoso">
     <div class="fama_persona">
-        <img src="<?php echo BASEURL;?>assets/img/bom.png" alt="xerifinho" class="persona2">
+        <img src="<?php echo BASEURL;?>assets/img/bom.png" alt="xerifinho" class="persona2 persona-responsive">
     </div>
 </div>
 <div class="container text-center tit mt-5">

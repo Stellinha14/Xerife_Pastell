@@ -657,7 +657,7 @@ a {
     height: 80vw !important;
   }
   .resul-mobile{
-    display: block;
+    display: block !important;
   }
   .resul-desktop{
     display: none !important;
@@ -1004,13 +1004,49 @@ a {
     display: block !important;
   }
     .outer{
+    height: 65vh !important; /* altura igual a 100% da tela */
+    width: 65vh !important;
+  }
+  .resul{
     height: 60vh !important; /* altura igual a 100% da tela */
     width: 60vh !important;
   }
-
-  .resul{
-    height: 55vh !important; /* altura igual a 100% da tela */
-    width: 55vh !important;
+  .pnum{
+    font-size: 89px;
+  }
+  .persona{
+    height: 53vw !important;
+  }
+  .persona2{
+    height: 58vw !important;
+  }
+  .fundo{
+    height: 87vh !important; 
+    width: 87vh !important;
+  }
+  .resul_txt {
+    font-size: 40px !important;
+  }
+  .cont{
+    text-align: center !important;
+  }
+  .col_2{
+    display: none;
+  }
+  .col_2_mobile{
+    display: block;
+  }
+  .resul_quiz_cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .famoso{
+    width: 90% !important;
+  }
+  .cont_famoso{
+    flex-direction: column !important;
   }
 }
 
@@ -1120,7 +1156,21 @@ a {
   .pnum {
     font-size: 70px;
   }
-
+  .persona2{
+    height: 55vw !important;
+  }
+    .bg_quiz{
+    width: 96% !important;
+  }
+  .resul_txt {
+    font-size: 35px !important;
+  }
+  .txt_resul{
+    font-size: 20px !important;
+  }
+  .persona-responsive{
+    height: 40vw !important;
+  }
 }
 
 @media (max-width: 838px) {
@@ -1264,6 +1314,21 @@ a {
   .persona{
     height: 41vw !important;
   }
+  .persona2{
+    height: 48vw !important;
+  }
+  .bg_quiz{
+    width: 96% !important;
+  }
+  .resul_txt {
+    font-size: 35px !important;
+  }
+  .txt_resul{
+    font-size: 20px !important;
+  }
+  .persona-responsive{
+    height: 40vw !important;
+  }
 }
 
 /* telas entre 992px e 1200px */
@@ -1326,5 +1391,11 @@ a {
   }
   .persona{
     height: 41vw !important;
+  }
+  .persona2{
+    height: 48vw !important;
+  }
+  .persona-responsive{
+    height: 40vw !important;
   }
 }

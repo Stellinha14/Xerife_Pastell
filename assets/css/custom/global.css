@@ -304,8 +304,84 @@ a {
   width: 92%;
   margin-bottom: 4vw;
 }
+
 .resul-mobile{
   display: none !important;
+}
+
+/* clases teste.php */
+.pasteis-sabores{
+  width: 15vw;
+  height: 10vw;
+  max-width: 220px;
+  max-height: 420px;
+  border-radius: 5px;
+}
+.container-geral{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 12px;
+  background-color: #814D3B50;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 0px 15px #999;
+}
+.column-1, .column-2{
+  flex:1 1 45%; /*<flex-grow> <flex-shrink> <flex-basis>*/
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.box{
+  display: inline-flex;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #ac7c42;
+  cursor: grab;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+.box.placed:hover{
+  transform: none;
+  box-shadow: none;
+}
+.drop{
+  height: 12vw;
+  width: 18vw;
+  max-width: 220px;
+  min-height: 160px;
+  border: 3px dashed #999;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  border-radius: 8px;
+  transition: all 0.5s ease;
+}
+.drop-sab{
+  display: none;
+  height: 12vw;
+  width: 18vw;
+  max-width: 220px;
+  min-height: 160px;
+  border: 3px dashed #999;
+  border-radius: 8px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #cac8c8;
+}
+.over{
+  background-color: #fff7e6;
+  border-color: #f5b642;
+}
+.teste{
+  background-color: #000000 !important;
 }
 /* Responsividade */
 /* celulares */

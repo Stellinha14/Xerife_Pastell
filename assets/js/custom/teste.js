@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function(){
     const box = document.querySelectorAll(".box");
     console.log(box); 
     const drop = document.querySelectorAll(".drop");
+    
     let pai;
     box.forEach(box_unic => {
         box_unic.addEventListener('dragstart', e => {
@@ -67,5 +68,18 @@ document.addEventListener("DOMContentLoaded", function(){
 
         });
     });
+    console.log('oi')
+    const btnLimpa = document.getElementById('btnLimpa');
+
+    if(btnLimpa){
+        btnLimpa.addEventListener('click', () => {
+            const columnInicial = document.querySelector('.column-1');
+
+            box.forEach(b => {
+                columnInicial.appendChild(b);
+                b.classList.remove('placed');
+            });
+        });
+    }
 
 });

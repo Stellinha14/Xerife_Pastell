@@ -351,6 +351,12 @@ a {
   transform: none;
   box-shadow: none;
 }
+.cont_drop{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .drop{
   height: 12vw;
   width: 18vw;

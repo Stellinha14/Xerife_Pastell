@@ -75,11 +75,30 @@
             </div>
         </div>
         <div class="column-2 opc">
-            <div id="drop1" class="drop"><span>1°</span></div>
-            <div id="drop2" class="drop"><span>2°</span></div>
-            <div id="drop3" class="drop"><span>3°</span></div>
-            <div id="drop4" class="drop"><span>4°</span></div>
-            <div id="drop5" class="drop"><span>5°</span></div>
+            <div class="cont_drop">
+                <span>1°</span>
+                <div id="drop1" class="drop"><span>1°</span></div>
+            </div>
+            <div class="cont_drop">
+                <span>2°</span>
+                <div id="drop2" class="drop"><span>2°</span></div>
+            </div>
+            <div class="cont_drop">
+                <span>3°</span>
+                <div id="drop3" class="drop"><span>3°</span></div>
+            </div>
+            <div class="cont_drop">
+                <span>4°</span>
+                <div id="drop4" class="drop"><span>4°</span></div>
+            </div>
+            <div class="cont_drop">
+                <span>5°</span>
+                <div id="drop5" class="drop"><span>5°</span></div>
+            </div>
+        </div>
+        <div class="carta-btn justify-content-center align-items-center">
+            <button type="button" id="btn" class="btn-en btn-ler tit">Ver Significado</button>
+            <button type="button" id="btnLimpa" class="btn-lim tit">Limpar</button>
         </div>
     </div>
 </div>

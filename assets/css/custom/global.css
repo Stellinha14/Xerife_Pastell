@@ -382,6 +382,9 @@ a {
   align-items: center;
   color: #cac8c8;
 }
+.slot{
+  background-color: #000000;
+}
 .over{
   background-color: #fff7e6;
   border-color: #f5b642;

@@ -2,14 +2,15 @@ document.addEventListener("DOMContentLoaded", function(){
     const box = document.querySelectorAll(".box");
     console.log(box); 
     const drop = document.querySelectorAll(".drop");
-    
+
     let pai;
     box.forEach(box_unic => {
         box_unic.addEventListener('dragstart', e => {
+            const origem = box_unic.setAttribute("data-origem", slot.dataset.slot);
             e.dataTransfer.setData('text/plain', e.currentTarget.id); 
             let pai_element = document.getElementById(e.currentTarget.id).parentElement;
             if(pai_element.classList.contains('drop')){
-                console.log("oi")
+                //console.log("oi")
                 pai = pai_element;
             }
         });
@@ -68,15 +69,18 @@ document.addEventListener("DOMContentLoaded", function(){
 
         });
     });
-    console.log('oi')
+    //console.log('oi')
     const btnLimpa = document.getElementById('btnLimpa');
 
     if(btnLimpa){
         btnLimpa.addEventListener('click', () => {
+            //console.log(drop_sab)
+            drop_sab.remove();
             const columnInicial = document.querySelector('.column-1');
+            const slot = columnInicial.querySelectorAll(".slot")
 
             box.forEach(b => {
-                columnInicial.appendChild(b);
+                slot.appendChild(b);
                 b.classList.remove('placed');
             });
         });

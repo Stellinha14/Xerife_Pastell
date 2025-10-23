@@ -3,8 +3,37 @@ document.addEventListener("DOMContentLoaded", function(){
     console.log(box); 
     const drop = document.querySelectorAll(".drop");
     const slots = document.querySelectorAll(".slot");
+    let btn = document.getElementById("btnSig");
     let pai;
+    let cont = 0;
 
+    function atualizarCont(){
+        drop.forEach(d => {
+            const filhoDrop = d.querySelectorAll(".box")
+            //console.log(filhoDrop);
+            if(filhoDrop.length >= 1){
+                cont = cont+1;
+            }
+        });
+        console.log(cont);
+        //console.log(cont);
+
+        if (cont === 5){
+            btnSig.style.display = "block"
+        }
+    
+        let significado = document.querySelector(".significado");
+
+        btn.addEventListener("click", function(event){
+            event.preventDefault();
+            significado.classList.toggle("show");
+            if (significado.classList.contains('show')){
+                btn.innerHTML = "Esconder Significado"
+            }else{
+                btn.innerHTML = "Ver Significado"
+            }
+        });
+    }
     box.forEach(box_unic => {
         const slotPai = box_unic.parentElement;
         console.log(slotPai);
@@ -53,7 +82,6 @@ document.addEventListener("DOMContentLoaded", function(){
                 span_sumido.style.display = 'block';
             }
             
-            
             //mostra drop_sab
             const slot = element.parentElement;
             const drop_sab = slot.querySelector('.drop-sab');
@@ -71,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function(){
             if(span){
                 span.style.display = "none";
             }
-
+            atualizarCont();
         });
     });
     //console.log('oi')
@@ -102,30 +130,5 @@ document.addEventListener("DOMContentLoaded", function(){
             });
         });
     }
-    let btn = document.getElementById("btnSig");
-    let cont = 0;
-
-    drop.forEach(d => {
-        const filhoDrop = d.querySelector(".box")
-        if(filhoDrop){
-            cont = cont+1;
-            filhoDrop = null
-        }
-    });
-    console.log(cont);
-    if (cont === 5){
-        btnSig.style.display = "block"
-    }
     
-    let significado = document.querySelector(".significado");
-
-    btn.addEventListener("click", function(event){
-        event.preventDefault();
-        significado.classList.toggle("show");
-        if (significado.classList.contains('show')){
-            btn.innerHTML = "Esconder Significado"
-        }else{
-            btn.innerHTML = "Ver Significado"
-        }
-    });
 });

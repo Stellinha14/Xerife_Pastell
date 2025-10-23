@@ -382,8 +382,14 @@ a {
   align-items: center;
   color: #cac8c8;
 }
-.slot{
-  background-color: #000000;
+.btnSig{
+  display: none;
+}
+.significado{
+  display: none !important;
+}
+.significado.show{
+  display: block !important;
 }
 .over{
   background-color: #fff7e6;

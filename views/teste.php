@@ -97,9 +97,35 @@
             </div>
         </div>
         <div class="carta-btn justify-content-center align-items-center">
-            <button type="button" id="btn" class="btn-en btn-ler tit">Ver Significado</button>
+            <button type="button" id="btnSig" class="btn-en tit btnSig">Ver Significado</button>
             <button type="button" id="btnLimpa" class="btn-lim tit">Limpar</button>
         </div>
+        <div class="d-flex flex-column significado">
+            <p class="text-center txtadivinha tit font1">
+                A maneira como você ordenou os pasteis representa a prioridade que cada um destes campos abaixo tem em sua vida:
+            </p>
+            <p class="text-center txtadivinha tit font1">
+                <span class="font2">Pastel de Queijo:</span>
+                Estabilidade e Segurança
+            </p>
+            <p class="text-center txtadivinha tit font1">
+                <span class="font2">Pastel de Bauru:</span>
+                Amizade e Alegria
+            </p>
+            <p class="text-center txtadivinha tit font1">
+                <span class="font2">Pastel de Camarão:</span>
+                Paixão e Intensidade
+            </p>
+            <p class="text-center txtadivinha tit font1">
+                <span class="font2">Pastel de Morango:</span>
+                Afeto e Doçura
+            </p>
+            <p class="text-center txtadivinha tit font1">
+                <span class="font2">Pastel de Beijinho:</span>
+                Nostalgia e Inocência
+            </p>
+        </div>
+        
     </div>
 </div>
 <?php

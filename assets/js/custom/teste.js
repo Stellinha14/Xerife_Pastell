@@ -6,20 +6,27 @@ document.addEventListener("DOMContentLoaded", function(){
     let btn = document.getElementById("btnSig");
     let pai;
     let cont = 0;
+    let guardados = [];
 
     function atualizarCont(){
         drop.forEach(d => {
             const filhoDrop = d.querySelectorAll(".box")
             //console.log(filhoDrop);
-            if(filhoDrop.length >= 1){
-                cont = cont+1;
+            filhoDrop.forEach(filho => {
+                if(!guardados.includes(filho)){
+                    guardados.push(filho);
+                    console.log(guardados); 
+                }
+            });
+            if(guardados.length >= 5){
+                btnSig.style.display = "block";
             }
         });
-        console.log(cont);
+        //console.log(cont);
         //console.log(cont);
 
         if (cont === 5){
-            btnSig.style.display = "block"
+            btnSig.style.display = "block";
         }
     
         let significado = document.querySelector(".significado");
@@ -30,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function(){
             if (significado.classList.contains('show')){
                 btn.innerHTML = "Esconder Significado"
             }else{
-                btn.innerHTML = "Ver Significado"
+                btn.innerHTML = "Ver Significado";
             }
         });
     }

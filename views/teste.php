@@ -1,6 +1,6 @@
-<?php 
-    include ("../config.php");
-    include HEADER_TEMPLATE;
+<?php
+include("../config.php");
+include HEADER_TEMPLATE;
 ?>
 <div class="container">
     <header>
@@ -31,8 +31,10 @@
 
     <!-- Teste 1 -->
     <section class="container-geral" arial-label="Teste Tibetano 1">
-            <!-- Box -->
+        <!-- Box -->
+        <div class="cont_test1">
             <div class="column-1">
+                <h1 class="san text-center tit-column">Sabores</h1>
                 <div class="slot" data-slot="1">
                     <div id="box1" class="box" draggable="true">
                         <img src="<?php echo BASEURL; ?>assets/img/queijo.png" class="img-fluid pasteis-sabores">
@@ -41,7 +43,6 @@
                         <span>Pastel de Queijo</span>
                     </div>
                 </div>
-        
                 <div class="slot" data-slot="2">
                     <div id="box2" class="box" draggable="true">
                         <img src="<?php echo BASEURL; ?>assets/img/camarao.png" class="img-fluid pasteis-sabores">
@@ -77,6 +78,7 @@
             </div>
             <!-- Drop -->
             <div class="column-2 opc">
+                <h1 class="san text-center tit-column">Posições</h1>
                 <div class="cont_drop">
                     <span>1°</span>
                     <div id="drop1" class="drop"><span>1°</span></div>
@@ -98,40 +100,43 @@
                     <div id="drop5" class="drop"><span>5°</span></div>
                 </div>
             </div>
-            <!-- button -->
-            <div class="carta-btn justify-content-center align-items-center">
-                <button type="button" id="btnSig" class="btn-en tit btnSig">Ver Significado</button>
-                <button type="button" id="btnLimpa" class="btn-lim tit">Resetar</button>
-            </div>
-            <!-- signicados -->
-            <div class="d-flex flex-column significado">
-                <p class="text-center txtadivinha tit font1">
-                    A maneira como você ordenou os pasteis representa a prioridade que cada um destes campos abaixo tem em sua vida:
-                </p>
-                <p class="text-center txtadivinha tit font1">
+        </div>
+        <!-- button -->
+        <div class="carta-btn justify-content-center align-items-center">
+            <button type="button" id="btnSig" class="btn-en tit btnSig">Ver Significado</button>
+            <button type="button" id="btnLimpa" class="btn-lim tit">Resetar</button>
+        </div>
+        <!-- signicados -->
+        <div class="d-flex flex-column significado">
+            <p class="text-center txtadivinha tit font1">
+                A maneira como você ordenou os pasteis, representa a prioridade que cada um destes campos abaixo tem em sua vida:
+            </p>
+            <ul class="lista-signi">
+                <li class="text-start txtadivinha tit font1">
                     <span class="font2">Pastel de Queijo:</span>
                     Estabilidade e Segurança
-                </p>
-                <p class="text-center txtadivinha tit font1">
+                </li>
+                <li class="text-start txtadivinha tit font1">
                     <span class="font2">Pastel de Bauru:</span>
                     Amizade e Alegria
-                </p>
-                <p class="text-center txtadivinha tit font1">
+                </li>
+                <li class="text-start txtadivinha tit font1">
                     <span class="font2">Pastel de Camarão:</span>
                     Paixão e Intensidade
-                </p>
-                <p class="text-center txtadivinha tit font1">
+                </li>
+                <li class="text-start txtadivinha tit font1">
                     <span class="font2">Pastel de Morango:</span>
                     Afeto e Doçura
-                </p>
-                <p class="text-center txtadivinha tit font1">
+                </li>
+                <li class="text-start txtadivinha tit font1">
                     <span class="font2">Pastel de Beijinho:</span>
                     Nostalgia e Inocência
-                </p>
-            </div>
+                </li>
+            </ul>
+        </div>
     </section>
 </div>
 <?php
-    include FOOTER_TEMPLATE;
+include FOOTER_TEMPLATE;
 ?>
 <script src="<?php echo BASEURL; ?>assets/js/custom/teste.js"></script>

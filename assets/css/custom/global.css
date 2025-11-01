@@ -311,21 +311,29 @@ a {
 
 /* clases teste.php */
 .pasteis-sabores{
-  width: 15vw;
-  height: 10vw;
-  max-width: 220px;
-  max-height: 420px;
+  width: 14vw;
+  height: 9vw;
+  max-width: 219px;
+  max-height: 419px;
   border-radius: 5px;
 }
 .container-geral{
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   margin-top: 12px;
   background-color: #814D3B50;
   border-radius: 10px;
   padding: 15px;
   box-shadow: 0px 0px 15px #999;
+}
+.cont_test1{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.tit-column{
+  width: 100%;
 }
 .column-1, .column-2{
   flex:1 1 45%; /*<flex-grow> <flex-shrink> <flex-basis>*/
@@ -334,6 +342,10 @@ a {
   align-items: center;
   justify-content: center;
   gap: 14px;
+  border: #662f1d 3px dashed;
+}
+.column-2{
+  padding: 23px 0;
 }
 .box{
   display: inline-flex;
@@ -358,10 +370,10 @@ a {
   align-items: center;
 }
 .drop{
-  height: 8vw;
-  width: 16vw;
+  height: 4vw;
+  width: 15.5vw;
   max-width: 220px;
-  min-height: 160px;
+  min-height: 156px;
   border: 3px dashed #999;
   display: flex;
   align-items: center;
@@ -371,10 +383,10 @@ a {
 }
 .drop-sab{
   display: none;
-  height: 12vw;
-  width: 18vw;
+  height: 5vw;
+  width: 15vw;
   max-width: 220px;
-  min-height: 160px;
+  min-height: 157px;
   border: 3px dashed #999;
   border-radius: 8px;
   text-align: center;
@@ -387,9 +399,14 @@ a {
 }
 .significado{
   display: none !important;
+  
 }
 .significado.show{
   display: block !important;
+  background-color: rgb(228, 188, 129, 0.8);
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
 }
 .over{
   background-color: #fff7e6;
@@ -398,6 +415,28 @@ a {
 .teste{
   background-color: #000000 !important;
 }
+.lista-signi li{
+  list-style:none;
+  padding-left: 40px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.lista-signi li::before{
+  content: "";
+  background: url('../../img/icon.png') no-repeat center;
+  background-size: contain;
+  position: absolute;
+  left: 0 ;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+ 
+}
+/* ul li ::before{
+  content: "\1F600";
+} */
 /* Responsividade */
 /* celulares */
 @media (max-width: 576px) {

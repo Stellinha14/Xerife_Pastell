@@ -399,6 +399,7 @@ a {
 }
 .significado{
   display: none !important;
+  padding: 0px !important;
   
 }
 .significado.show{
@@ -415,9 +416,14 @@ a {
 .enum{
   margin-top: 30px;
 }
-.teste{
-  font-weight: bold;
+.icons{
+  width: 23px;
+  height: 23px;
+  margin-right: 10px;
 }
+/* .teste{
+  font-weight: bold;
+} */
 .lista-signi li{
   list-style:none;
   padding-left: 40px;

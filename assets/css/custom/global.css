@@ -59,6 +59,11 @@
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
+.font4 {
+  color: rgb(34, 34, 34) !important; 
+  font-size: 19px;
+}
+
 body {
   background-color: #e4d581;
   margin: 0;
@@ -397,6 +402,10 @@ a {
 .btnSig{
   display: none;
 }
+.btnSig2{
+  display: none;
+}
+
 .significado{
   display: none !important;
   padding: 0px !important;
@@ -420,6 +429,43 @@ a {
   width: 23px;
   height: 23px;
   margin-right: 10px;
+}
+
+.adj{
+  display: flex;
+  align-items: center;
+  font-family: opc;
+  font-size: 25px;
+  font-weight: 600;
+  gap: 15px;
+  border: 4px double #814D3B; 
+  padding: 10px 15px;
+  transition: all 0.25s ease-in-out;
+}
+.adj:hover{
+  transform:scaleX(1.02) ;
+}
+.adj p{
+  margin: 0;
+  width: 37vw;
+  /* background-color: #000000; */
+}
+.adj input{
+  /* width: 200px; */
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px dashed #491a0a;
+  font-size: 20px;
+  text-align: center;
+  color: #220c05;
+  transition: all 0.25s ease-in-out;
+}
+.adj input:focus{
+  outline:none;
+  border-bottom: 2px solid #662f1d;
+  transform: scaleX(1.03);
 }
 /* .teste{
   font-weight: bold;

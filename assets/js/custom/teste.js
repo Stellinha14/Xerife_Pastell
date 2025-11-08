@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
             significado.classList.toggle("show");
 
             if (significado.classList.contains('show')) {
-                btn.innerHTML = "Esconder Significado"
+                btn.innerHTML = "Esconder Significado";
             } else {
                 btn.innerHTML = "Ver Significado";
             }
@@ -162,20 +162,53 @@ document.addEventListener("DOMContentLoaded", function () {
         const reset = document.getElementById("btnLimpa2");
         const campos = document.querySelectorAll(".inputAdj");
         const btnSig = document.getElementById("btnSig2")
-        const respostas = []
+        const sign = document.querySelector('.sign2');
+        const inserir = document.querySelectorAll('.camporesp');
 
         //limpar 
         if(reset){
             reset.addEventListener('click', () => {
                 campos.forEach(c =>{
-                    //console.log(c.value);
                     c.value = '';
                 })
                 btnSig.style.display = "none";
+
+                if(sign.classList.contains('show')){
+                    sign.classList.remove('show');
+                    btnSig.innerHTML = "Ver significado";
+                }
             });
         }
 
+        //mostra o significado
+        if (btnSig){
+            btnSig.addEventListener('click', () => {
+                const respostas = Array.from(campos);
+                const inser = Array.from(inserir);
+                const registro = respostas.map(c => c.value.trim());
 
+                registro.forEach((resp, i) => {
+
+                    if(i == 4 && resp.endsWith("o")){
+                        resp = resp.slice(0, -1) + "a";
+                    }
+                    if(i == 2 && resp.endsWith("o")){
+                        resp = resp.slice(0, -1) + "a";
+                    }
+                    inser[i].innerHTML = resp.toLowerCase() + '.';
+                });
+
+                sign.classList.toggle('show');
+
+                if(sign.classList.contains('show')){
+                    btnSig.innerHTML = "Esconder Significado"
+                }else{
+                    btnSig.innerHTML = "Ver Significado"
+                }
+            });
+        }
+
+        // verifica se todos os cmapos estão preenchidos para mostra o btn
         function verificarCampo(){
             
             const verifica = Array.from(campos) // transforma nodelist em array
@@ -183,7 +216,6 @@ document.addEventListener("DOMContentLoaded", function () {
             // every = percorre o array e retorna 'true' se a condição '()' for validada
 
             btnSig.style.display = todosPreenchidos ? "block" : "none";
-            
         }
     
         campos.forEach(c =>{
@@ -196,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // QUESTÃO 3 - RELACIONAR PASTEIS
     // ===========================
     function questao_3() {
-
+        
     }
 
     // ==========================

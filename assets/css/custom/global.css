@@ -419,6 +419,18 @@ a {
   margin-top: 10px;
   padding: 10px;
 }
+.sign2{
+  display: none !important;
+  padding: 0px !important;
+}
+.sign2.show{
+  display: block !important;
+  background-color: rgb(228, 188, 129, 0.8);
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+}
 .over{
   background-color: #fff7e6;
   border-color: #f5b642;
@@ -467,6 +479,56 @@ a {
   outline:none;
   border-bottom: 2px solid #662f1d;
   transform: scaleX(1.03);
+}
+.column{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.box-gen{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.box3{
+  display: flex;
+  align-items: center;
+  font-family: opc;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #ac7c42;
+}
+
+.input3{
+  width: 220px; 
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px dashed #491a0a;
+  font-size: 20px;
+  font-family: opc;
+  text-align: center;
+  color: #220c05;
+  transition: all 0.25s ease-in-out;
+}
+.input3:focus{
+  outline:none;
+  border-bottom: 2px solid #662f1d;
+  transform: scaleX(1.03);
+}
+
+.sabores3{
+  width: 24vw;
+  height: 10vw;
+  max-width: 229px;
+  max-height: 422px;
+  border-radius: 5px;
 }
 /* .teste{
   font-weight: bold;

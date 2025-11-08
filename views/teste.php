@@ -209,11 +209,13 @@ include HEADER_TEMPLATE;
             <p class="text-center"><em class="font4 tit"><span class="font2">Lembre-se:</span> não existe resposta certa ou errada, o que vale é o que você sente sobre cada sabor. Siga seu instinto de xerife e divirta-se com a sua própria escolha!</em></p>
 
             <!-- button space  -->
-            <button type="button" id="btnSig2" class="btn-en tit btnSig2">Ver Significado</button>
-            <button type="button" id="btnLimpa2" class="btn-lim tit">Resetar</button>
+            <div class="carta-btn justify-content-center align-items-center">
+                <button type="button" id="btnSig2" class="btn-en tit btnSig2">Ver Significado</button>
+                <button type="button" id="btnLimpa2" class="btn-lim tit">Resetar</button>
+            </div>
 
             <!-- significado -->
-            <div class="d-flex flex-column significado">
+            <div class="d-flex flex-column sign2">
                 <p class="text-center txtadivinha tit font1">
                     Cada <span class="font2">adjetivo</span> atribuído aos pasteis, diz um pouquinho sobre <span class="font2">você:</span>
                 </p>
@@ -239,9 +241,166 @@ include HEADER_TEMPLATE;
                         Representa o tipo de experiência que mais te encanta.
                     </li>
                 </ul>
-                <p class="text-center txtadivinha tit font1">
-                    De acordo com as suas respostas: 
+
+                <!-- significados especificos -->
+                <p class="text-center txtadivinha tit font2">
+                    De acordo com as suas respostas:
                 </p>
+                <ul class="lista-signi">
+                    <li class="text-start txtadivinha tit font1">
+                        Você se vê como alguém
+                        <span class="font2"><em class="camporesp"></em></span>
+                    </li>
+                    <li class="text-start txtadivinha tit font1">
+                        Para você, o amor é algo
+                        <span class="font2"><em class="camporesp"></em></span>
+                    </li>
+                    <li class="text-start txtadivinha tit font1">
+                        A felicidade, na sua opinião é,
+                        <span class="font2"><em class="camporesp"></em></span>
+                    </li>
+                    <li class="text-start txtadivinha tit font1">
+                        Para você, o trabalho e esforço é algo
+                        <span class="font2"><em class="camporesp"></em></span>
+                    </li>
+                    <li class="text-start txtadivinha tit font1">
+                        Pra uma experiencia te encantar de verdade, ela precisa ser
+                        <span class="font2"><em class="camporesp"></em></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teste 3 -->
+    <section arial-label="Teste Tibetano 3">
+        <!-- enunciado -->
+        <div class="enum txtadivinha tit">
+            <h1><span class="font2">Questão 03.</span> O Grande Rodeio dos Sabores!</h1>
+            <p>Pense nas <span class="font2">5 pessoas mais importantes</span> da sua vida.
+            </p>
+            <p>Agora, associe cada uma delas a um dos <span class="font2">5 pastéis lendários</span> da Xerife Pastell:</p>
+
+            <!-- sabor + icon -->
+            <div class="d-flex align-items-center mb-2">
+                <img src="<?php echo BASEURL; ?>assets/img/i_hotdog.png" class="icons" alt="icon de queijo">
+                <p class="font2 m-0">Hot Dog;</p>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+                <img src="<?php echo BASEURL; ?>assets/img/i_brocolis.png" class="icons" alt="icon de bauru">
+                <p class="font2 m-0">Brócolis e Queijo;</p>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+                <img src="<?php echo BASEURL; ?>assets/img/i_carne.png" class="icons" alt="icon de camarão">
+                <p class="font2 m-0">Carne;</p>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+                <img src="<?php echo BASEURL; ?>assets/img/i_palmito.png" class="icons" alt="icon de morango">
+                <p class="font2 m-0">Palmito;</p>
+            </div>
+            <div class="d-flex align-items-center">
+                <img src="<?php echo BASEURL; ?>assets/img/i_frango.png" class="icons" alt="icon de beijinho">
+                <p class="font2 m-0">Frango c/ Catupiry.</p>
+            </div>
+
+            <p class="mt-2"><span class="font2">Atenção: </span> cada pessoa deve ter seu pastel único. Use sua intuição de xerife e escolha o pastel que melhor representa cada pessoa!</p>
+        </div>
+
+        <div class="container-geral" arial-label="Teste Tibetano 1">
+            <!-- input + img -->
+            <div class="column">
+                <div class="box-gen">
+                    <div class="box3 mb-2">
+                        <img src="<?php echo BASEURL; ?>assets/img/hotdog.png" class="img-fluid sabores3">
+                    </div>
+                    <input class="input3" type="text" value="">
+                </div>
+                <div class="box-gen">
+                    <div class="box3 mb-2">
+                        <img src="<?php echo BASEURL; ?>assets/img/brocolis.png" class="img-fluid sabores3">
+                    </div>
+                    <input class="input3" type="text" value="">
+                </div>
+                <div class="box-gen">
+                    <div class="box3 mb-2">
+                        <img src="<?php echo BASEURL; ?>assets/img/carne.png" class="img-fluid sabores3">
+                    </div>
+                    <input class="input3" type="text" value="">
+                </div>
+                <div class="box-gen">
+                    <div class="box3 mb-2">
+                        <img src="<?php echo BASEURL; ?>assets/img/palmito.png" class="img-fluid sabores3">
+                    </div>
+                    <input class="input3" type="text" value="">
+                </div>
+                <div class="box-gen">
+                    <div class="box3 mb-2">
+                        <img src="<?php echo BASEURL; ?>assets/img/frango.png" class="img-fluid sabores3">
+                    </div>
+                    <input class="input3" type="text" value="">
+                </div>
+            </div>
+
+            <!-- button space  -->
+            <div class="carta-btn justify-content-center align-items-center">
+                <button type="button" id="btnSig2" class="btn-en tit btnSig2">Ver Significado</button>
+                <button type="button" id="btnLimpa2" class="btn-lim tit">Resetar</button>
+            </div>
+
+            <!-- significado -->
+            <div class="d-flex flex-column sign2">
+                <p class="text-center txtadivinha tit font1">
+                    Cada <span class="font2">adjetivo</span> atribuído aos pasteis, diz um pouquinho sobre <span class="font2">você:</span>
+                </p>
+                <ul class="lista-signi">
+                    <li class="text-start txtadivinha tit font1">
+                        <span class="font2">Pastel de Vento:</span>
+                        Mostra como você se vê.
+                    </li>
+                    <li class="text-start txtadivinha tit font1">
+                        <span class="font2">Pastel Doce:</span>
+                        Revela sua visão sobre o amor.
+                    </li>
+                    <li class="text-start txtadivinha tit font1">
+                        <span class="font2">Refrigerante Gelado:</span>
+                        Reflete como você vê a felicidade.
+                    </li>
+                    <li class="text-start txtadivinha tit font1">
+                        <span class="font2">Pastel de Queijo:</span>
+                        Mostra sua relação com o trabalho e o esforço.
+                    </li>
+                    <li class="text-start txtadivinha tit font1">
+                        <span class="font2">Pastel Crocante:</span>
+                        Representa o tipo de experiência que mais te encanta.
+                    </li>
+                </ul>
+
+                <!-- significados especificos -->
+                <p class="text-center txtadivinha tit font2">
+                    De acordo com as suas respostas:
+                </p>
+                <ul class="lista-signi">
+                    <li class="text-start txtadivinha tit font1">
+                        Você se vê como alguém
+                        <span class="font2"><em class="camporesp"></em></span>
+                    </li>
+                    <li class="text-start txtadivinha tit font1">
+                        Para você, o amor é algo
+                        <span class="font2"><em class="camporesp"></em></span>
+                    </li>
+                    <li class="text-start txtadivinha tit font1">
+                        A felicidade, na sua opinião é,
+                        <span class="font2"><em class="camporesp"></em></span>
+                    </li>
+                    <li class="text-start txtadivinha tit font1">
+                        Para você, o trabalho e esforço é algo
+                        <span class="font2"><em class="camporesp"></em></span>
+                    </li>
+                    <li class="text-start txtadivinha tit font1">
+                        Pra uma experiencia te encantar de verdade, ela precisa ser
+                        <span class="font2"><em class="camporesp"></em></span>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>

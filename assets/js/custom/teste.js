@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function questao_1() {
         const box = document.querySelectorAll(".box");
-        console.log(box);
+        // console.log(box);
         let drop = document.querySelectorAll(".drop");
         const slots = document.querySelectorAll(".slot");
         let btn = document.getElementById("btnSig");
@@ -159,7 +159,37 @@ document.addEventListener("DOMContentLoaded", function () {
     // QUESTÃO 2 - ADJETIVOS NOS PASTEIS
     // ===========================
     function questao_2() {
+        const reset = document.getElementById("btnLimpa2");
+        const campos = document.querySelectorAll(".inputAdj");
+        const btnSig = document.getElementById("btnSig2")
+        const respostas = []
 
+        //limpar 
+        if(reset){
+            reset.addEventListener('click', () => {
+                campos.forEach(c =>{
+                    //console.log(c.value);
+                    c.value = '';
+                })
+                btnSig.style.display = "none";
+            });
+        }
+
+
+        function verificarCampo(){
+            
+            const verifica = Array.from(campos) // transforma nodelist em array
+            const todosPreenchidos = verifica.every(c => c.value.trim() !== "") 
+            // every = percorre o array e retorna 'true' se a condição '()' for validada
+
+            btnSig.style.display = todosPreenchidos ? "block" : "none";
+            
+        }
+    
+        campos.forEach(c =>{
+            c.addEventListener("input", verificarCampo);
+        });
+        
     }
 
     // ==========================

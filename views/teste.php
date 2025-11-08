@@ -183,27 +183,27 @@ include HEADER_TEMPLATE;
             <!-- input + paragrafo -->
             <div class="font2 adj mb-4">
                 <p>O Pastel de Vento é ...</p>
-                <input type="text">
+                <input class="inputAdj" type="text" value="">
             </div>
 
             <div class="font2 adj mb-4">
                 <p>Pastel Doce é ...</p>
-                <input type="text">
+                <input class="inputAdj" type="text" value="">
             </div>
 
             <div class="font2 adj mb-4">
                 <p>Refrigerante gelado é ...</p>
-                <input type="text">
+                <input class="inputAdj" type="text" value="">
             </div>
 
             <div class="font2 adj mb-4">
                 <p>Pastel de Queijo Derretido é ...</p>
-                <input type="text">
+                <input class="inputAdj" type="text" value="">
             </div>
 
             <div class="font2 adj mb-4">
                 <p>Pastel Crocante é ...</p>
-                <input type="text">
+                <input class="inputAdj" type="text" value="">
             </div>
             <!-- obs. -->
             <p class="text-center"><em class="font4 tit"><span class="font2">Lembre-se:</span> não existe resposta certa ou errada, o que vale é o que você sente sobre cada sabor. Siga seu instinto de xerife e divirta-se com a sua própria escolha!</em></p>
@@ -211,6 +211,38 @@ include HEADER_TEMPLATE;
             <!-- button space  -->
             <button type="button" id="btnSig2" class="btn-en tit btnSig2">Ver Significado</button>
             <button type="button" id="btnLimpa2" class="btn-lim tit">Resetar</button>
+
+            <!-- significado -->
+            <div class="d-flex flex-column significado">
+                <p class="text-center txtadivinha tit font1">
+                    Cada <span class="font2">adjetivo</span> atribuído aos pasteis, diz um pouquinho sobre <span class="font2">você:</span>
+                </p>
+                <ul class="lista-signi">
+                    <li class="text-start txtadivinha tit font1">
+                        <span class="font2">Pastel de Vento:</span>
+                        Mostra como você se vê.
+                    </li>
+                    <li class="text-start txtadivinha tit font1">
+                        <span class="font2">Pastel Doce:</span>
+                        Revela sua visão sobre o amor.
+                    </li>
+                    <li class="text-start txtadivinha tit font1">
+                        <span class="font2">Refrigerante Gelado:</span>
+                        Reflete como você vê a felicidade.
+                    </li>
+                    <li class="text-start txtadivinha tit font1">
+                        <span class="font2">Pastel de Queijo:</span>
+                        Mostra sua relação com o trabalho e o esforço.
+                    </li>
+                    <li class="text-start txtadivinha tit font1">
+                        <span class="font2">Pastel Crocante:</span>
+                        Representa o tipo de experiência que mais te encanta.
+                    </li>
+                </ul>
+                <p class="text-center txtadivinha tit font1">
+                    De acordo com as suas respostas: 
+                </p>
+            </div>
         </div>
     </section>
 </div>

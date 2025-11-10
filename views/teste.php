@@ -273,7 +273,7 @@ include HEADER_TEMPLATE;
     </section>
 
     <!-- Teste 3 -->
-    <section arial-label="Teste Tibetano 3">
+    <section  class="mb-5" arial-label="Teste Tibetano 3">
         <!-- enunciado -->
         <div class="enum txtadivinha tit">
             <h1><span class="font2">Questão 03.</span> O Grande Rodeio dos Sabores!</h1>
@@ -308,70 +308,76 @@ include HEADER_TEMPLATE;
 
         <div class="container-geral" arial-label="Teste Tibetano 1">
             <!-- input + img -->
-            <div class="column">
+            <div class="column mt-3">
                 <div class="box-gen">
                     <div class="box3 mb-2">
                         <img src="<?php echo BASEURL; ?>assets/img/hotdog.png" class="img-fluid sabores3">
                     </div>
-                    <input class="input3" type="text" value="">
+                    <input class="input3" type="text" value="" placeholder="Quem vem a sua mente?">
                 </div>
                 <div class="box-gen">
                     <div class="box3 mb-2">
                         <img src="<?php echo BASEURL; ?>assets/img/brocolis.png" class="img-fluid sabores3">
                     </div>
-                    <input class="input3" type="text" value="">
+                    <input class="input3" type="text" value="" placeholder="Quem vem a sua mente?">
                 </div>
                 <div class="box-gen">
                     <div class="box3 mb-2">
                         <img src="<?php echo BASEURL; ?>assets/img/carne.png" class="img-fluid sabores3">
                     </div>
-                    <input class="input3" type="text" value="">
+                    <input class="input3" type="text" value="" placeholder="Quem vem a sua mente?">
                 </div>
                 <div class="box-gen">
                     <div class="box3 mb-2">
                         <img src="<?php echo BASEURL; ?>assets/img/palmito.png" class="img-fluid sabores3">
                     </div>
-                    <input class="input3" type="text" value="">
+                    <input class="input3" type="text" value="" placeholder="Quem vem a sua mente?">
+                </div>
+                <div class="teste">
+                    <img src="<?php echo BASEURL; ?>assets/img/pensativo.png" class="xerifinho_teste">
                 </div>
                 <div class="box-gen">
                     <div class="box3 mb-2">
                         <img src="<?php echo BASEURL; ?>assets/img/frango.png" class="img-fluid sabores3">
                     </div>
-                    <input class="input3" type="text" value="">
+                    <input class="input3" type="text" value="" placeholder="Quem vem a sua mente?">
+                </div>
+                <div class="teste2">
+                    <img src="<?php echo BASEURL; ?>assets/img/tche2.png" class="xerifinho_teste2">
                 </div>
             </div>
 
             <!-- button space  -->
             <div class="carta-btn justify-content-center align-items-center">
-                <button type="button" id="btnSig2" class="btn-en tit btnSig2">Ver Significado</button>
-                <button type="button" id="btnLimpa2" class="btn-lim tit">Resetar</button>
+                <button type="button" id="btnSig3" class="btn-en tit btnSig2">Ver Significado</button>
+                <button type="button" id="btnLimpa3" class="btn-lim tit">Resetar</button>
             </div>
 
             <!-- significado -->
-            <div class="d-flex flex-column sign2">
+            <div class="d-flex flex-column sign3">
                 <p class="text-center txtadivinha tit font1">
                     Cada <span class="font2">adjetivo</span> atribuído aos pasteis, diz um pouquinho sobre <span class="font2">você:</span>
                 </p>
                 <ul class="lista-signi">
                     <li class="text-start txtadivinha tit font1">
-                        <span class="font2">Pastel de Vento:</span>
-                        Mostra como você se vê.
+                        <span class="font2">Hot Dog:</span>
+                        Representa aquela pessoa divertida, espontânea e animada.
                     </li>
                     <li class="text-start txtadivinha tit font1">
-                        <span class="font2">Pastel Doce:</span>
-                        Revela sua visão sobre o amor.
+                        <span class="font2">Brócolis com Queijo:</span>
+                        Simboliza alguém cuidadoso, sensível e acolhedor.
                     </li>
                     <li class="text-start txtadivinha tit font1">
-                        <span class="font2">Refrigerante Gelado:</span>
-                        Reflete como você vê a felicidade.
+                        <span class="font2">Carne:</span>
+                        É a pessoa forte, decidida e confiável, que te apoia e te dá coragem.
                     </li>
                     <li class="text-start txtadivinha tit font1">
-                        <span class="font2">Pastel de Queijo:</span>
-                        Mostra sua relação com o trabalho e o esforço.
+                        <span class="font2">Palmito:</span>
+                        Reflete alguém calmo, equilibrado e gentil, que traz paz e harmonia pra sua vida.
                     </li>
                     <li class="text-start txtadivinha tit font1">
-                        <span class="font2">Pastel Crocante:</span>
-                        Representa o tipo de experiência que mais te encanta.
+                        <span class="font2">Frango c/ Catupiry:</span>
+                        É aquela pessoa especial e marcante, que te faz sentir segurança.
                     </li>
                 </ul>
 
@@ -381,24 +387,24 @@ include HEADER_TEMPLATE;
                 </p>
                 <ul class="lista-signi">
                     <li class="text-start txtadivinha tit font1">
-                        Você se vê como alguém
-                        <span class="font2"><em class="camporesp"></em></span>
+                        <span class="font2"><em class="camporesp3"></em></span>
+                        é alguém que te faz sorrir sem motivo.
                     </li>
                     <li class="text-start txtadivinha tit font1">
-                        Para você, o amor é algo
-                        <span class="font2"><em class="camporesp"></em></span>
+                        <span class="font2"><em class="camporesp3"></em></span>
+                        é aquele conforto que te acalma nos dias difíceis.
                     </li>
                     <li class="text-start txtadivinha tit font1">
-                        A felicidade, na sua opinião é,
-                        <span class="font2"><em class="camporesp"></em></span>
+                        <span class="font2"><em class="camporesp3"></em></span>
+                        é presença, força e entrega.
                     </li>
                     <li class="text-start txtadivinha tit font1">
-                        Para você, o trabalho e esforço é algo
-                        <span class="font2"><em class="camporesp"></em></span>
+                        <span class="font2"><em class="camporesp3"></em></span>
+                        é aquela presença tranquila que traz leveza e harmonia.
                     </li>
                     <li class="text-start txtadivinha tit font1">
-                        Pra uma experiencia te encantar de verdade, ela precisa ser
-                        <span class="font2"><em class="camporesp"></em></span>
+                        <span class="font2"><em class="camporesp3"></em></span>
+                        é alguém marcante e seguro.
                     </li>
                 </ul>
             </div>

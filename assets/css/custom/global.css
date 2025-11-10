@@ -486,6 +486,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  position: relative;
 }
 .box-gen{
   display: flex;
@@ -502,6 +503,11 @@ a {
   padding: 5px;
   border-radius: 5px;
   background-color: #ac7c42;
+  transition: transform 0.2s ease;
+}
+
+.box3:hover{
+  transform: scale(1.05);
 }
 
 .input3{
@@ -522,7 +528,10 @@ a {
   border-bottom: 2px solid #662f1d;
   transform: scaleX(1.03);
 }
-
+.input3::placeholder{
+  font-size: 12px;
+  color: #8d5b49;
+}
 .sabores3{
   width: 24vw;
   height: 10vw;
@@ -530,9 +539,36 @@ a {
   max-height: 422px;
   border-radius: 5px;
 }
-/* .teste{
-  font-weight: bold;
-} */
+.teste{
+  /* background-color: #220c05; */
+  position: absolute;
+  left: 5%;
+  bottom:-30px;
+}
+.teste2{
+  /* background-color: #220c05; */
+  position: absolute;
+  right: 8%;
+  bottom:-30px;
+}
+.xerifinho_teste{
+  width: 13.5vw;
+}
+.xerifinho_teste2{
+  width: 8.3vw;
+}
+.sign3{
+  display: none !important;
+  padding: 0px !important;
+}
+.sign3.show{
+  display: block !important;
+  background-color: rgb(228, 188, 129, 0.8);
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+}
 .lista-signi li{
   list-style:none;
   padding-left: 40px;

@@ -228,7 +228,63 @@ document.addEventListener("DOMContentLoaded", function () {
     // QUESTÃO 3 - RELACIONAR PASTEIS
     // ===========================
     function questao_3() {
-        
+        const reset = document.getElementById('btnLimpa3');
+        const campos = document.querySelectorAll('.input3');
+        const btnSig = document.getElementById('btnSig3');
+        const sign = document.querySelector('.sign3');
+        const inserir = document.querySelectorAll('.camporesp3');
+
+         //limpar 
+        if(reset){
+            reset.addEventListener('click', () => {
+                campos.forEach(c =>{
+                    c.value = '';
+                });
+
+                btnSig.style.display = "none";
+
+                if(sign.classList.contains('show')){
+                    sign.classList.remove('show');
+                    btnSig.innerHTML = "Ver significado";
+                }
+            });
+        }
+
+         // verifica se todos os cmapos estão preenchidos para mostra o btn
+        function verificarCampo(){
+            
+            const verifica = Array.from(campos) // transforma nodelist em array
+            const todosPreenchidos = verifica.every(c => c.value.trim() !== "") 
+            // every = percorre o array e retorna 'true' se a condição '()' for validada
+
+            btnSig.style.display = todosPreenchidos ? "block" : "none";
+        }
+    
+        campos.forEach(c =>{
+            c.addEventListener("input", verificarCampo);
+        });
+
+        //mostra o significado
+        if (btnSig){
+            btnSig.addEventListener('click', () => {
+                const respostas = Array.from(campos);
+                const inser = Array.from(inserir);
+                const registro = respostas.map(c => c.value.trim());
+
+                registro.forEach((resp, i) => {
+                    resp = resp.charAt(0).toUpperCase() + resp.slice(1).toLowerCase();
+                    inser[i].innerHTML = resp;
+                });
+
+                sign.classList.toggle('show');
+
+                if(sign.classList.contains('show')){
+                    btnSig.innerHTML = "Esconder Significado"
+                }else{
+                    btnSig.innerHTML = "Ver Significado"
+                }
+            });
+        }
     }
 
     // ==========================

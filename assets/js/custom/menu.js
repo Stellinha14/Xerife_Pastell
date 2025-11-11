@@ -6,12 +6,25 @@ document.addEventListener("DOMContentLoaded", function(){
     let fechar = document.getElementById("cancelar");
     let jogos = document.getElementById('dropdown');
     let dropdown = document.querySelector('.menu-dropdown');
+    let arrow = document.querySelector('.arrow');
+    let li = document.querySelectorAll('.navbar-links-desktop .nav-link');
+    
+    li.forEach(l => {
+        l.addEventListener('click', (e) =>{
 
+        });
+    })
     // dropdown
     jogos.addEventListener('click', function (event){
-        console.log(jogos);
-        console.log(dropdown);
         dropdown.classList.toggle('ativo');
+        arrow.classList.toggle('open');
+    });
+    // fecha dropdown
+    document.addEventListener('click', function(event){
+        if(!dropdown.contains(event.target) && !jogos.contains(event.target)){
+            dropdown.classList.remove('ativo');
+            arrow.classList.remove('open');
+        }
     });
 
     // menu mobile

@@ -1,6 +1,7 @@
 <?php
 include("../config.php");
 include HEADER_TEMPLATE;
+include SIDE_BAR;
 ?>
 <div class="container">
     <header>

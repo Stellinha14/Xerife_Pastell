@@ -1,6 +1,7 @@
 <?php 
     include ("../config.php");
     include HEADER_TEMPLATE;
+    include SIDE_BAR;
 ?>
 <div class="container">
     <div class="fundotxt p-1 mt-3 mb-3">

@@ -1,6 +1,7 @@
 <?php 
     include ("../config.php");
     include HEADER_TEMPLATE;
+    include SIDE_BAR;
 ?>
 <div class="container d-flex flex-column justify-content-center align-items-center">
     <div class="fundotxt p-1 mt-3 mb-3 col-12">

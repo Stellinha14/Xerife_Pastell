@@ -1,6 +1,7 @@
 <?php
 include("../config.php");
 include HEADER_TEMPLATE;
+include SIDE_BAR;
 ?>
 <?php
     $resultado = $_POST['resultado']??0;

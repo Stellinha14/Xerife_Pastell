@@ -1,6 +1,7 @@
 <?php
 include("../config.php");
 include HEADER_TEMPLATE;
+include SIDE_BAR;
 ?>
 <?php
     $img = $_POST['img']??0;

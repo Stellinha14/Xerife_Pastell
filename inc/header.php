@@ -23,22 +23,15 @@
         <img src="<?php echo BASEURL; ?>assets/img/icon.png" alt="Logo" id="img-menu" class="menu-img-logo mb-2">
       </a>
     </div>
-    <!-- <div id="sidebar"> -->
-      <!-- <img id="cancelar" src="<?php echo BASEURL; ?>assets/img/cancelar.png" alt="logo" class="cancelar"> -->
-      <!-- <header class="menu-mobile-top" type="button">
-        <p class="navbar-brand titulo-lateral">Xerife Pastell</p>
-        <img src="<?php echo BASEURL; ?>assets/img/icon.png" alt="Logo" class="menu-img-logo-mobile ms-2">
-      </header> -->
-      <!-- <div class="bottom-mobile"> -->
+    <?php include("sidebar.php"); ?>
         <ul class="navbar-links-desktop">
-          <!-- <hr class="hr-inicial"> -->
-          <li class="nav-item me-3">
+          <li class="nav-item">
             <img src="<?php echo BASEURL; ?>assets/img/home.png" alt="logo" class="icon-home">
-            <a class="nav-link active" aria-current="page" href="<?php echo BASEURL; ?>index.php">Home</a> 
+            <a class="nav-link" aria-current="page" href="<?php echo BASEURL; ?>index.php"><img src="<?php echo BASEURL; ?>assets/img/home.png" alt="Logo" class="icon-menu-home">Home</a> 
           </li>
           <hr>
           <li class="nav-item me-3">
-            <a class="nav-link" href="<?php echo BASEURL; ?>views/adivinha.php">Jogos</a>
+            <a class="nav-link" href=#><img src="<?php echo BASEURL; ?>assets/img/game.png" alt="Logo" class="icon-menu">Jogos</a>
 
             <ul class="menu-dropdown">
               <li class="nav-item">
@@ -58,17 +51,14 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link-drop" href="<?php echo BASEURL; ?>views/famosos.php"><img src="<?php echo BASEURL; ?>assets/img/i_teste.png" alt="Logo" class="icon-menu">Teste Tibetano</a>
+                <a class="nav-link-drop" href="<?php echo BASEURL; ?>views/teste.php"><img src="<?php echo BASEURL; ?>assets/img/i_teste.png" alt="Logo" class="icon-menu">Teste Tibetano</a>
               </li>
             </ul>
           </li>
-          <li class="nav-item me-3">
-            <a class="nav-link" href="<?php echo BASEURL; ?>views/sobre.php">Sobre Nós</a>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo BASEURL; ?>views/sobre.php"><img src="<?php echo BASEURL; ?>assets/img/sobre.png" alt="Logo" class="icon-menu">Sobre Nós</a>
           </li>
         </ul>
-
-      <!-- </div> -->
-    <!-- </div> -->
   </nav>
   <div id="overlay"></div>
   <script src="<?php echo BASEURL; ?>assets/js/bootstrap/bootstrap.bundle.min.js"></script>

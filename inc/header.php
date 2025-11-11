@@ -23,43 +23,54 @@
         <img src="<?php echo BASEURL; ?>assets/img/icon.png" alt="Logo" id="img-menu" class="menu-img-logo mb-2">
       </a>
     </div>
-    <div id="sidebar">
-      <img id="cancelar" src="<?php echo BASEURL; ?>assets/img/cancelar.png" alt="logo" class="cancelar">
-      <header class="menu-mobile-top" type="button">
+    <!-- <div id="sidebar"> -->
+      <!-- <img id="cancelar" src="<?php echo BASEURL; ?>assets/img/cancelar.png" alt="logo" class="cancelar"> -->
+      <!-- <header class="menu-mobile-top" type="button">
         <p class="navbar-brand titulo-lateral">Xerife Pastell</p>
         <img src="<?php echo BASEURL; ?>assets/img/icon.png" alt="Logo" class="menu-img-logo-mobile ms-2">
-      </header>
-      <div class="bottom-mobile">
-        <ul class="navbar-links">
-          <hr class="hr-inicial">
+      </header> -->
+      <!-- <div class="bottom-mobile"> -->
+        <ul class="navbar-links-desktop">
+          <!-- <hr class="hr-inicial"> -->
           <li class="nav-item me-3">
             <img src="<?php echo BASEURL; ?>assets/img/home.png" alt="logo" class="icon-home">
-            <a class="nav-link active" aria-current="page" href="<?php echo BASEURL; ?>index.php">Home</a>
+            <a class="nav-link active" aria-current="page" href="<?php echo BASEURL; ?>index.php">Home</a> 
           </li>
           <hr>
           <li class="nav-item me-3">
-            <a class="nav-link" href="<?php echo BASEURL; ?>views/adivinha.php">Números</a>
-          </li>
-        
-          <li class="nav-item me-3">
-            <a class="nav-link" href="<?php echo BASEURL; ?>views/imagens.php">Imagens</a>
-          </li>
-        
-          <li class="nav-item me-3">
-            <a class="nav-link" href="<?php echo BASEURL; ?>views/quiz.php">Quiz</a>
-          </li>
-        
-          <li class="nav-item me-3">
-            <a class="nav-link" href="<?php echo BASEURL; ?>views/famosos.php">Famosos</a>
+            <a class="nav-link" href="<?php echo BASEURL; ?>views/adivinha.php">Jogos</a>
+
+            <ul class="menu-dropdown">
+              <li class="nav-item">
+                <a class="nav-link-drop" href="<?php echo BASEURL; ?>views/adivinha.php"><img src="<?php echo BASEURL; ?>assets/img/numeros.png" alt="Logo" class="icon-menu">Números</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link-drop" href="<?php echo BASEURL; ?>views/imagens.php"><img src="<?php echo BASEURL; ?>assets/img/galeria.png" alt="Logo" class="icon-menu">Imagens</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link-drop" href="<?php echo BASEURL; ?>views/quiz.php"><img src="<?php echo BASEURL; ?>assets/img/quiz.png" alt="Logo" class="icon-menu">Quiz</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link-drop" href="<?php echo BASEURL; ?>views/famosos.php"><img src="<?php echo BASEURL; ?>assets/img/fama.png" alt="Logo" class="icon-menu">Famosos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link-drop" href="<?php echo BASEURL; ?>views/famosos.php"><img src="<?php echo BASEURL; ?>assets/img/i_teste.png" alt="Logo" class="icon-menu">Teste Tibetano</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item me-3">
             <a class="nav-link" href="<?php echo BASEURL; ?>views/sobre.php">Sobre Nós</a>
           </li>
         </ul>
-      </div>
-    </div>
+
+      <!-- </div> -->
+    <!-- </div> -->
   </nav>
   <div id="overlay"></div>
   <script src="<?php echo BASEURL; ?>assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="<?php echo BASEURL; ?>assets/js/custom/menu.js"></script>
+  <script src="<?php echo BASEURL; ?>assets/js/custom/menu.js"></script>
 </body>

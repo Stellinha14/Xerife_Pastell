@@ -143,7 +143,9 @@ body {
   width: 100%;
 }
 /* dropdown */
+
 .menu-dropdown{
+  display: none;
   position: absolute;
   top: calc(90% - 10px);
   left: calc(50% + 65px);
@@ -153,6 +155,10 @@ body {
   padding: 15px;
   z-index: 1000;
 }
+.menu-dropdown.ativo{
+  display: block !important;
+}
+
 .menu-dropdown::before{
   content: "";
   position: absolute;
@@ -186,6 +192,7 @@ body {
   margin-right: 8px;
   margin-bottom: 5px;
 }
+
 .menu {
   display: none;
   width: 33px;

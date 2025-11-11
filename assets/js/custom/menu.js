@@ -4,6 +4,17 @@ document.addEventListener("DOMContentLoaded", function(){
     let overlay = document.getElementById("overlay");
     let img = document.getElementById("img-menu");
     let fechar = document.getElementById("cancelar");
+    let jogos = document.getElementById('dropdown');
+    let dropdown = document.querySelector('.menu-dropdown');
+
+    // dropdown
+    jogos.addEventListener('click', function (event){
+        console.log(jogos);
+        console.log(dropdown);
+        dropdown.classList.toggle('ativo');
+    });
+
+    // menu mobile
     menu.addEventListener("click", function(event){
         sidebar.style.left = "0";
         overlay.style.display = "block";

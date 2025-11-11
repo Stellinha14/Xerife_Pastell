@@ -31,7 +31,7 @@
           </li>
           <hr>
           <li class="nav-item me-3">
-            <a class="nav-link" href=#><img src="<?php echo BASEURL; ?>assets/img/game.png" alt="Logo" class="icon-menu">Jogos</a>
+            <a id="dropdown" class="nav-link" href=#><img src="<?php echo BASEURL; ?>assets/img/game.png" alt="Logo" class="icon-menu">Jogos</a>
 
             <ul class="menu-dropdown">
               <li class="nav-item">

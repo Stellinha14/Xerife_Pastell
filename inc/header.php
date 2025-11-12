@@ -1,3 +1,6 @@
+<?php
+  $current_page = basename($_SERVER['PHP_SELF']);
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -23,26 +26,26 @@
         <img src="<?php echo BASEURL; ?>assets/img/icon.png" alt="Logo" id="img-menu" class="menu-img-logo mb-2">
       </a>
     </div>
-    
-        <ul class="navbar-links-desktop">
-          <li class="nav-item">
-            <img src="<?php echo BASEURL; ?>assets/img/home.png" alt="logo" class="icon-home">
-            <a class="nav-link" aria-current="page" href="<?php echo BASEURL; ?>index.php"><img src="<?php echo BASEURL; ?>assets/img/home.png" alt="Logo" class="icon-menu-home">Home</a> 
-          </li>
-          <hr>
-          <li id="jogos" class="nav-item me-3">
-            <button id="dropdown" class="nav-link" href="#"><img src="<?php echo BASEURL; ?>assets/img/game.png" alt="Logo" class="icon-menu">Jogos <span class="arrow"></span></button>
 
-            <ul class="menu-dropdown">
-              <?php
-                include ("links.php");
-              ?>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<?php echo BASEURL; ?>views/sobre.php"><img src="<?php echo BASEURL; ?>assets/img/sobre.png" alt="Logo" class="icon-menu">Sobre Nós</a>
-          </li>
+    <ul class="navbar-links-desktop">
+      <li class="nav-item <?=  $current_page == 'index.php' ? 'active' : ''?>">
+        <img src="<?php echo BASEURL; ?>assets/img/home.png" alt="logo" class="icon-home">
+        <a class="nav-link" aria-current="page" href="<?php echo BASEURL; ?>index.php"><img src="<?php echo BASEURL; ?>assets/img/home.png" alt="Logo" class="icon-menu-home">Home</a>
+      </li>
+      <hr>
+      <li id="jogos" class="nav-item <?=  ($current_page == 'adivinha.php' || $current_page == 'famosos.php' || $current_page == 'imagens.php' || $current_page == 'quiz.php' || $current_page == 'teste.php' || $current_page == 'resul_fama.php' || $current_page == 'resul_imagens.php' || $current_page == 'resul_quiz.php' || $current_page == 'resultados.php') ? 'active' : '' ?>">
+        <button id="dropdown" class="nav-link" href="#"><img src="<?php echo BASEURL; ?>assets/img/game.png" alt="Logo" class="icon-menu">Jogos <span class="arrow"></span></button>
+
+        <ul class="menu-dropdown">
+          <?php
+          include("links.php");
+          ?>
         </ul>
+      </li>
+      <li class="nav-item <?= $current_page == 'sobre.php' ? 'active' : '' ?>">
+        <a class="nav-link" href="<?php echo BASEURL; ?>views/sobre.php"><img src="<?php echo BASEURL; ?>assets/img/sobre.png" alt="Logo" class="icon-menu">Sobre Nós</a>
+      </li>
+    </ul>
   </nav>
   <div id="overlay"></div>
   <script src="<?php echo BASEURL; ?>assets/js/bootstrap/bootstrap.bundle.min.js"></script>

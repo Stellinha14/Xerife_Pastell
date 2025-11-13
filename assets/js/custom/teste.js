@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function logicaDrop() {
         const box = document.querySelectorAll(".box");
-        // console.log(box);
         let drop = document.querySelectorAll(".drop");
         const slots = document.querySelectorAll(".slot");
         let btn = document.getElementById("btnSig");
@@ -172,6 +171,116 @@ document.addEventListener("DOMContentLoaded", function () {
     // ==========================
     // FUNÇÃO TOUCH - (QUESTÃO 1)
     function logicaTouch(){
+        let boxSelect = null;
+        let drop_sab = null;
+        let span = null;
+        let contador = 0;
+        let box = document.querySelectorAll(".box");
+        let drop = document.querySelectorAll(".drop");
+        let slots = document.querySelectorAll(".slot");
+        let btn = document.getElementById("btnSig");
+        let reset = document.getElementById('btnLimpa');
+        let guardados = [];
+        let select = false;
+        let significado = document.querySelector(".significado");
+        let memoria = new Map();
+
+
+        // verificar box clicada
+        box.forEach(b => {
+            // guardando slot correspondete a cada box
+            const slotOrigem = b.parentElement;
+            memoria.set(b.id, slotOrigem);
+
+            b.addEventListener('click', () => {
+                select = true;
+                const slot = b.parentElement;
+                drop_sab = slot.querySelector('.drop-sab');
+                boxSelect = b;
+            });
+        });
+
+        // verficar drop clicada
+        drop.forEach(d=>{
+            d.addEventListener('click', () => {
+                if(!select){
+                    console.log('Não selecionou nenhuma box');
+                    return;
+                }
+                span = d.querySelector('span');
+                if(boxSelect){
+                    d.appendChild(boxSelect);
+                    boxSelect = null;                    
+                }
+                if(drop_sab){
+                    drop_sab.style.display = 'flex';
+                    drop_sab = null;
+                }
+                if(span){
+                    span.style.display = "none";
+                    span = null;
+                }
+                checkList();
+            })
+        });
+
+        // verifica se tds os box ja foram colocados nas drops
+        function checkList(){
+            slots.forEach(s=>{
+                const check = s.querySelector('.box')
+                // console.log(s);
+                if(!check && !guardados.includes(s)){
+                    contador ++;
+                    guardados.push(s);
+                }
+            });
+            // console.log(contador);
+            if (contador >= 5){
+                btn.style.display="block";
+                guardados = [];
+            }
+        }
+
+        // mostrar significado
+        if(btn){
+            btn.addEventListener('click', () =>{
+
+                significado.classList.toggle("show");
+                if (significado.classList.contains('show')) {
+                    btn.innerHTML = "Esconder Significado";
+                } else {
+                    btn.innerHTML = "Ver Significado";
+                }
+
+            });
+        }
+
+        // resetar game
+        if(reset){
+            reset.addEventListener('click', ()=>{
+                contador = 0;
+                guardados = [];
+                box.forEach(b=>{
+                    const pai_box = b.parentElement;
+                    span = pai_box.querySelector('span');
+                    const destino = memoria.get(b.id);
+                    drop_sab = destino.querySelector('.drop-sab');
+
+                    if(destino){
+                        btn.style.display = "none";
+                        if (significado.classList.contains('show')) {
+                            significado.classList.remove("show");
+                            btn.innerHTML = "Ver Significado"
+                        }
+                        span.style.display = "block";
+                        drop_sab.style.display = "none";
+                        destino.appendChild(b);
+                        drop_sab = null;
+                        span = null;
+                    }
+                });
+            });
+        }
         
     }
 

@@ -5,6 +5,20 @@ document.addEventListener("DOMContentLoaded", function () {
     // ===========================
 
     function questao_1() {
+        const viewPort = window.matchMedia("(max-width: 768px)").matches;
+        if (viewPort) {
+            logicaTouch();
+        } else {
+            logicaDrop();
+        }
+
+
+    }
+
+    // ==========================
+    // FUNÇÃO DROP - (QUESTÃO 1)
+
+    function logicaDrop() {
         const box = document.querySelectorAll(".box");
         // console.log(box);
         let drop = document.querySelectorAll(".drop");
@@ -156,6 +170,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // ==========================
+    // FUNÇÃO TOUCH - (QUESTÃO 1)
+    function logicaTouch(){
+        
+    }
+
+    // ==========================
     // QUESTÃO 2 - ADJETIVOS NOS PASTEIS
     // ===========================
     function questao_2() {
@@ -166,14 +186,14 @@ document.addEventListener("DOMContentLoaded", function () {
         const inserir = document.querySelectorAll('.camporesp');
 
         //limpar 
-        if(reset){
+        if (reset) {
             reset.addEventListener('click', () => {
-                campos.forEach(c =>{
+                campos.forEach(c => {
                     c.value = '';
                 })
                 btnSig.style.display = "none";
 
-                if(sign.classList.contains('show')){
+                if (sign.classList.contains('show')) {
                     sign.classList.remove('show');
                     btnSig.innerHTML = "Ver significado";
                 }
@@ -181,7 +201,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         //mostra o significado
-        if (btnSig){
+        if (btnSig) {
             btnSig.addEventListener('click', () => {
                 const respostas = Array.from(campos);
                 const inser = Array.from(inserir);
@@ -189,10 +209,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 registro.forEach((resp, i) => {
 
-                    if(i == 4 && resp.endsWith("o")){
+                    if (i == 4 && resp.endsWith("o")) {
                         resp = resp.slice(0, -1) + "a";
                     }
-                    if(i == 2 && resp.endsWith("o")){
+                    if (i == 2 && resp.endsWith("o")) {
                         resp = resp.slice(0, -1) + "a";
                     }
                     inser[i].innerHTML = resp.toLowerCase() + '.';
@@ -200,28 +220,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 sign.classList.toggle('show');
 
-                if(sign.classList.contains('show')){
+                if (sign.classList.contains('show')) {
                     btnSig.innerHTML = "Esconder Significado"
-                }else{
+                } else {
                     btnSig.innerHTML = "Ver Significado"
                 }
             });
         }
 
         // verifica se todos os cmapos estão preenchidos para mostra o btn
-        function verificarCampo(){
-            
+        function verificarCampo() {
+
             const verifica = Array.from(campos) // transforma nodelist em array
-            const todosPreenchidos = verifica.every(c => c.value.trim() !== "") 
+            const todosPreenchidos = verifica.every(c => c.value.trim() !== "")
             // every = percorre o array e retorna 'true' se a condição '()' for validada
 
             btnSig.style.display = todosPreenchidos ? "block" : "none";
         }
-    
-        campos.forEach(c =>{
+
+        campos.forEach(c => {
             c.addEventListener("input", verificarCampo);
         });
-        
+
     }
 
     // ==========================
@@ -234,38 +254,38 @@ document.addEventListener("DOMContentLoaded", function () {
         const sign = document.querySelector('.sign3');
         const inserir = document.querySelectorAll('.camporesp3');
 
-         //limpar 
-        if(reset){
+        //limpar 
+        if (reset) {
             reset.addEventListener('click', () => {
-                campos.forEach(c =>{
+                campos.forEach(c => {
                     c.value = '';
                 });
 
                 btnSig.style.display = "none";
 
-                if(sign.classList.contains('show')){
+                if (sign.classList.contains('show')) {
                     sign.classList.remove('show');
                     btnSig.innerHTML = "Ver significado";
                 }
             });
         }
 
-         // verifica se todos os cmapos estão preenchidos para mostra o btn
-        function verificarCampo(){
-            
+        // verifica se todos os cmapos estão preenchidos para mostra o btn
+        function verificarCampo() {
+
             const verifica = Array.from(campos) // transforma nodelist em array
-            const todosPreenchidos = verifica.every(c => c.value.trim() !== "") 
+            const todosPreenchidos = verifica.every(c => c.value.trim() !== "")
             // every = percorre o array e retorna 'true' se a condição '()' for validada
 
             btnSig.style.display = todosPreenchidos ? "block" : "none";
         }
-    
-        campos.forEach(c =>{
+
+        campos.forEach(c => {
             c.addEventListener("input", verificarCampo);
         });
 
         //mostra o significado
-        if (btnSig){
+        if (btnSig) {
             btnSig.addEventListener('click', () => {
                 const respostas = Array.from(campos);
                 const inser = Array.from(inserir);
@@ -278,9 +298,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 sign.classList.toggle('show');
 
-                if(sign.classList.contains('show')){
+                if (sign.classList.contains('show')) {
                     btnSig.innerHTML = "Esconder Significado"
-                }else{
+                } else {
                     btnSig.innerHTML = "Ver Significado"
                 }
             });

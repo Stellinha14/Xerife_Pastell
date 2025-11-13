@@ -33,8 +33,8 @@
         <a class="nav-link" aria-current="page" href="<?php echo BASEURL; ?>index.php"><img src="<?php echo BASEURL; ?>assets/img/home.png" alt="Logo" class="icon-menu-home">Home</a>
       </li>
       <hr>
-      <li id="jogos" class="nav-item <?=  ($current_page == 'adivinha.php' || $current_page == 'famosos.php' || $current_page == 'imagens.php' || $current_page == 'quiz.php' || $current_page == 'teste.php' || $current_page == 'resul_fama.php' || $current_page == 'resul_imagens.php' || $current_page == 'resul_quiz.php' || $current_page == 'resultados.php') ? 'active' : '' ?>">
-        <button id="dropdown" class="nav-link" href="#"><img src="<?php echo BASEURL; ?>assets/img/game.png" alt="Logo" class="icon-menu">Jogos <span class="arrow"></span></button>
+      <li id="jogos" class="nav-item">
+        <button id="dropdown" class="nav-link <?=  ($current_page == 'adivinha.php' || $current_page == 'famosos.php' || $current_page == 'imagens.php' || $current_page == 'quiz.php' || $current_page == 'teste.php' || $current_page == 'resul_fama.php' || $current_page == 'resul_imagens.php' || $current_page == 'resul_quiz.php' || $current_page == 'resultados.php') ? 'active' : '' ?>" href="#"><img src="<?php echo BASEURL; ?>assets/img/game.png" alt="Logo" class="icon-menu">Jogos <span class="arrow"></span></button>
 
         <ul class="menu-dropdown">
           <?php

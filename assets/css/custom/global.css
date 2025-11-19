@@ -1223,6 +1223,24 @@ a {
   }
 
   /* teste.php */
+  .column-1{
+    padding: 10px;
+  }
+  .column-2{
+    
+  }
+  .drop {
+    height: 37vw;
+    width: 40vw;
+    /* max-width: 220px;
+    min-height: 156px; */
+  }
+  .pasteis-sabores {  
+    width: 35vw;
+    height: 22vw;
+    /* max-width: 300px;
+    max-height: 450px; */
+  }
   .cont_test1 {
     display: flex;
     flex-direction: column;

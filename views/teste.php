@@ -183,27 +183,27 @@ include SIDE_BAR;
         <div class="container-geral" arial-label="Teste Tibetano 1">
             <!-- input + paragrafo -->
             <div class="font2 adj mb-4">
-                <p>O Pastel de Vento é ...</p>
+                <p>O Pastel de Vento é <span>...</span></p>
                 <input class="inputAdj" type="text" value="">
             </div>
 
             <div class="font2 adj mb-4">
-                <p>Pastel Doce é ...</p>
+                <p>Pastel Doce é <span>...</span></p>
                 <input class="inputAdj" type="text" value="">
             </div>
 
             <div class="font2 adj mb-4">
-                <p>Refrigerante gelado é ...</p>
+                <p>Refrigerante gelado é <span>...</span></p>
                 <input class="inputAdj" type="text" value="">
             </div>
 
             <div class="font2 adj mb-4">
-                <p>Pastel de Queijo Derretido é ...</p>
+                <p>Pastel de Queijo <span>Derretido</span> é <span>...</span></p>
                 <input class="inputAdj" type="text" value="">
             </div>
 
             <div class="font2 adj mb-4">
-                <p>Pastel Crocante é ...</p>
+                <p>Pastel Crocante é <span>...</span></p>
                 <input class="inputAdj" type="text" value="">
             </div>
             <!-- obs. -->

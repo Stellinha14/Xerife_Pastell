@@ -5,13 +5,20 @@ document.addEventListener("DOMContentLoaded", function () {
     // ===========================
 
     function questao_1() {
-        const viewPort = window.matchMedia("(max-width: 768px)").matches;
-        if (viewPort) {
+        const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+        const width = window.innerWidth;
+
+        const isMobile = isTouch && width <= 576 // MOBILE
+        const isTablet = isTouch && width > 576 && width <= 1024; //TABLET
+        const isDesktop = !isTouch || width > 1024; //DESKTOP
+
+        if (isMobile) {
             logicaTouch();
-        } else {
+        } else if(isTablet) {
+            logicaTouch();
+        }else if (isDesktop){
             logicaDrop();
         }
-
 
     }
 
@@ -203,6 +210,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // verficar drop clicada
         drop.forEach(d=>{
             d.addEventListener('click', () => {
+                // console.log(select);
                 if(!select){
                     console.log('Não selecionou nenhuma box');
                     return;
@@ -210,11 +218,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 span = d.querySelector('span');
                 if(boxSelect){
                     d.appendChild(boxSelect);
-                    boxSelect = null;                    
+                    boxSelect = null;   
+                    select = false;                 
                 }
                 if(drop_sab){
                     drop_sab.style.display = 'flex';
                     drop_sab = null;
+                    
                 }
                 if(span){
                     span.style.display = "none";

@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
+    teste();
     // Elementos Gerais
     let menu = document.getElementById("abrir-menu");
     let sidebar = document.getElementById("sidebar");
@@ -65,6 +66,13 @@ document.addEventListener("DOMContentLoaded", function(){
             img.style.display = "inline-block";
         }
     });
-
+    function teste(){
+        const largura = window.innerWidth;
+    if(largura <= 769){
+        console.log('celular');
+    }
+    }
+    
+    
     // Final do Código
 });
